@@ -1,0 +1,27 @@
+{
+  "name": "la-campina-tailwind-nativo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/css/styles.css -o ./output.css --watch",
+    "start": "node src/server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
+  },
+  "dependencies": {
+    "compression": "^1.7.5",
+    "express": "^4.21.2",
+    "flowbite": "^2.5.2",
+    "leaflet": "^1.9.4",
+    "swiper": "^11.1.15",
+    "tailwindcss": "^3.4.14"
+  }
+}

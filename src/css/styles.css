@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior:smooth;
+}
+
+  .navbar{
+    background-image: url('https://ik.imagekit.io/kirt8tkpk/img/fondoGroovy2.webp	');
+    background-repeat: repeat;
+  }
+
+  #contenedor1{
+    background-image: url('https://ik.imagekit.io/kirt8tkpk/img/fondoGroovy2.webp') ;
+    background-repeat:repeat;
+   
+  }
+
+  #contenedorintermedio1{
+    background: linear-gradient(to bottom, #2D5132 50%, #E3D7BB 90%),url('https://ik.imagekit.io/kirt8tkpk/img/fondoGroovy.webp');
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+  }
+
+
+  #contenedorintermedio2{
+    background: linear-gradient(to bottom, rgba(227, 215, 187, 1) 50%, rgba(255, 255, 255, 0) 100%), url('https://ik.imagekit.io/kirt8tkpk/img/fondoGroovy.webp');
+    /* Degradado de color a transparente */
+    background-repeat: repeat;
+    background-size: cover;
+    /* Corregido: comillas simples eliminadas */
+    background-blend-mode: overlay;
+    /* Mezcla el degradado y la imagen */
+
+  }
+  
+  #contenedor2 {
+    background-color: #ffffff;
+    background-image: url('https://ik.imagekit.io/kirt8tkpk/img/.webp');
+    /* Cambiado a 100% para asegurar que el verde ocupe toda la altura */
+    background-repeat: repeat;
+    /* Elimina la repetición del fondo */
+    background-blend-mode: overlay;
+    /* Mezcla el color de fondo con la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Añade opacidad de 10% al color de fondo */
+  }
+
+  #botonBanner{
+    background-image: url('https://ik.imagekit.io/kirt8tkpk/img/.webp');
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+  }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+.scrollbar-thin {
+  scrollbar-width: thin; /* Para Firefox */ 
+  scrollbar-color: #2D5132 #E3D7BB
+
+
+}
+
+.scrollbar-body{
+  scrollbar-color: #2D5132 #E3D7BB;
+}
+
+::-webkit-scrollbar-track {
+  background: #E3D7BB; /* Color de fondo del track */
+}
+
+.contenedorDesplegablePanoramas {
+  transition: max-height 0.3s ease;
+}
+
+
+
+        /* Contenedor para el efecto 3D */
+.flip-container {
+          perspective: 1000px; /* Añade profundidad para el efecto 3D */
+          width: full;
+          height: full;
+      }
+
+      /* Div interior que va a rotar */
+.flipper {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transition: transform 1.8s;
+          transform-style: preserve-3d;
+      }
+
+      /* Activar rotación al hacer clic */
+.flip-container.girando .flipper {
+          transform: rotateY(360deg); /* Rota el div en el eje Y */
+      }
+
+      /* Añadir un estado para restablecer la rotación */
+      .flip-container:not(.girando) .flipper {
+          transform: rotateY(0deg); /* Restablece la rotación */
+      }
+
+      /* Cara delantera y trasera */
+      .front, .back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden; /* Oculta el reverso al rotar */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5em;
+          font-weight: bold;
+          color: white;
+      }
+
+
+    .dropdown-content {
+        display: none; /* Ocultar por defecto */
+        transition: max-height 0.3s ease-out; /* Transición suave */
+        overflow: hidden; /* Ocultar el contenido que excede el contenedor */
+    }
+
+    .dropdown-content.show {
+        display: block; /* Mostrar el contenido */
+        max-height: 200px; /* Ajusta según el contenido */
+    }
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); /* Comienza desde abajo */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateY(0); /* Termina en su posición original */
+        opacity: 1; /* Termina visible */
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0); /* Comienza en su posición original */
+        opacity: 1; /* Comienza visible */
+    }
+    to {
+        transform: translateY(-100%); /* Termina hacia arriba */
+        opacity: 1; /* Termina invisible */
+    }
+}
+
+.animate-slide-in {
+    animation: slideIn 500ms forwards ease-in-out; /* Animación de entrada */
+}
+
+.animate-slide-out {
+    animation: slideOut 500ms forwards ease-in-out; /* Animación de salida */
+}
+
+
+
+@media (max-width: 768px) { /* Ajusta el tamaño según tus necesidades */
+  #imgCarrusel1 {
+      content: url('https://ik.imagekit.io/kirt8tkpk/img/foto1chica.webp');
+  }
+}
+
+@media (max-width: 768px) { /* Ajusta el tamaño según tus necesidades */
+  #imgCarrusel2 {
+      content: url('https://ik.imagekit.io/kirt8tkpk/img/foto2chica.webp');
+  }
+}
+
+@media (max-width: 768px) { /* Ajusta el tamaño según tus necesidades */
+  #imgCarrusel3 {
+      content: url('https://ik.imagekit.io/kirt8tkpk/img/foto3chica.webp');
+  }
+}
+
+
+.carousel-3D-swiper-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+  max-height: 100%;
+	min-height: 50%;
+  
+
+}
+
+
+.carousel-3D-swiper .swiper-slide {
+	position: relative;
+  height: 80%;
+  object-fit: cover;
+
+}
+
+.carousel-3D-swiper .image-wrapper {
+	overflow: hidden;
+  object-fit: cover;
+
+}
+
+.carousel-3D-swiper .image-wrapper img {
+	display: block;
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: ;
+  
+	-webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba( 255, 0, 0,	0.1 ) 0%, transparent 32px, transparent 100%);
+}
+
+.details {
+  display: none; /* Ocultar por defecto */
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: transparent;
+}
+
+.active-image .details {
+  display: block; /* Mostrar solo cuando la imagen está activa */
+}
+
+
+  .swiper-button-prev{
+    position: absolute;
+    left: 0;
+    color: #2D5132;
+  }
+
+  .swiper-button-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    
+  }
+
+
+
+  .active-image {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    transition: transform 0.5s ease; /* Transición suave */
+    animation: float 2s ease-in-out infinite; /* Añadir efecto de flotar */
+  }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Posición original */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up slightly */
+    }
+}
+
+.transition {
+  transition: all 0.5s ease; /* Cambia la duración y el tipo de easing según sea necesario */
+}
+
+.hidden1 {
+  opacity: 0; /* Oculta el elemento */
+  transform: translateY(-20px); /* Desplaza el elemento hacia arriba */
+}
+
+.visible {
+  opacity: 1; /* Muestra el elemento */
+  transform: translateY(0); /* Restablece la posición */
+}
+
+/* Animaciones personalizadas */
+/* Eliminar todas las animaciones/keyframes conflictivas */
+.contenedorDesplegablePanoramas {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease;
+}
+
+#sidebarPanoramas {
+    overflow: hidden;
+    position: relative;
+}
+
+#sidebarPanoramas ul {
+    position: relative;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#sidebarPanoramas li {
+    transition: 
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease;
+    will-change: transform, opacity;
+    transform: translateX(0);
+}
+
+/* Estado activo */
+#sidebarPanoramas li.active-item {
+    z-index: 50;
+    transition: 
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s ease;
+}
+
+/* Ocultar elementos no activos */
+#sidebarPanoramas li:not(.active-item) {
+    transition: 
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s,
+        opacity 0.3s ease 0.1s;
+}
+
+/* Estilos generales para el dropdown */
+#dropdownNaturaleza {
+    width: 100%; /* Asegúrate de que el dropdown ocupe todo el ancho disponible */
+    /* Otros estilos existentes */
+}
+
+/* Remove bullet points from list items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the arrows to look like buttons */
+.arrow {
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Make them circular */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    font-size: 40px; /* Size of the arrow */
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    animation: float 2s ease-in-out infinite; /* Add floating effect */
+}
+
+.arrow:hover {
+    background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+/* Hide the scrollbar */
+.items-container {
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.items-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+

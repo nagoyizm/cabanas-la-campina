@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabañas La Campiña</title>
+    <link rel="stylesheet" href="output.css">
+    <!--fuentes-->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Geologica:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Whisper&display=swap');</style>
+    
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=directions_car" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=directions_walk" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=timer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=cancel" />
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!--Aos--> 
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
+    <!--Favicon-->
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <!--Leaflet--> 
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css"> 
+    
+    
+        
+</head>
+
+<body class="w-full max-width-100vw m-0 p-0 ">
+    <div class="absolute flex top-4 right-4 border-2 z-50 border-white 0  p-1 justify-center items-center" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+        <svg class="w-5 h-5 left-2 text-white align-middle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <div class="absolute flex top-4 right-14 border-2 z-50 border-white 0  p-1 justify-center items-center" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+        <svg class="w-5 h-5 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+          </svg>     
+    </div>
+<div id="duda" class="fade-out items-center justify-center fixed w-30 text-center align-middle h-6 bottom-20 right-2 p-4 rounded-md z-50 text-sm font-geologica text-white bg-black bg-opacity-50">Tienes alguna duda?</div>
+<div id="logoWsp" class="fixed w-12 h-12 bottom-4 right-4 z-50"><a href="https://wa.me/56979004253" target="_blank"><img src="https://ik.imagekit.io/kirt8tkpk/img/logowsp.webp" alt=""></a></div>
+<nav id="navbar" class="navbar hidden items-center px-4 sm:px-12 fixed z-50 h-[40px] bg-fondoVerde top-0 left-0 w-full tracking-widest transition-all duration-300 ease-in-out">
+        <div class="container lg:px-2 items-center lg:p-2 flex flex-row  w-full justify-between mx-auto  text-fondoCrema">   
+            <div class="flex flex-row items-center justify-between w-full">
+                <ul id="opcionesNav" class="h-8 flex flex-row items-center justify-start md:justify-start lg:justify-between w-full">
+                    <a href="#bajada" class="w-1/2 md:w-1/3 text-2xl lg:text-3xl font-bold font-whisper tracking-widest 
+                lg:w-1/4">La Campiña</a>
+
+                    
+                <div class="hidden lg:flex z-100 lg:flex-row items-center justify-between w-full">
+                    <a href="#recinto" class="hover:bg-gray-500 z-100 hover:bg-opacity-40 duration-300 ease-in-out font-antic p-2">Recinto</a>
+                    <a href="#cabanas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Cabañas</a>
+                    <a href="#suites" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Suites</a>
+                    <a href="#instalaciones" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Instalaciones</a>
+                    <a href="#panoramas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Panoramas</a>
+                    <a href="#ubicacion" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Ubicación</a>
+                    <div onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+                    <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                    </svg>
+                    </div>
+                    <div onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+                        <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                          </svg>
+                    </div>
+                </div>
+                        
+                </ul>
+            <!-- Botón de menú visible solo en pantallas pequeñas -->
+                <button id="menu-toggle" class="lg:hidden  items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white" >
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0v-2zm0 6h20v2H0v-2zm0 6h20v2H0v-2z"/>
+                    </svg>
+                </button>
+            </div>
+    </div>
+</nav>
+
+<div id="mobile-menu" class="max-h-0 xl:hidden lg:hidden overflow-hidden transition-all duration-300 ease-in-out z-50 fixed top-8 mt-1 right-0  rounded rounded-4 bg-fondoVerde">
+    <ul class="flex flex-col py-4 pb-8 gap-2 items-center text-fondoCrema px-16 ">
+        
+        <li><a href="#recinto" class="menuMob hidden md:flex hover:bg-gray-500 hover:bg-opacity-40 font-antic">Recinto</a></li>
+        <li><a href="#cabanas" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Cabañas</a></li>
+        <li><a href="#suites" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Suites</a></li>
+        <li><a href="#instalaciones" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Instalaciones</a></li>
+        <li><a href="#panoramas" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Panoramas</a></li>
+        <li><a href="#ubicacion" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic p-2">Ubicación</a></li>
+        <li>
+            <div class="menuMob" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+                <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+        </li>
+        <li>
+            <div class="menuMob" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+                <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<div id="contenedor1" class="bg-fondoVerde z-0 mx-auto  flex flex-col overflow-hidden">
+<section id="carrusel" class="w-full h-screen object-fill flex-wrap">
+    <div class="carousel-container relative w-full h-screen overflow-hidden">
+        <div class="relative carousel flex h-full w-100 overflow-hidden">
+            <img id="imgCarrusel1" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp?tr=w-auto" alt="Imagen 1" class="absolute object-fill top-0 left-0 w-100 flex h-full scale-125 opacity-100" loading="lazy">
+            <img id="imgCarrusel2" src="https://ik.imagekit.io/kirt8tkpk/img/foto2.webp?tr=w-auto" alt="Imagen 2" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
+            <img id="imgCarrusel3" src="https://ik.imagekit.io/kirt8tkpk/img/foto3.webp?tr=w-auto" alt="Imagen 3" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
+        </div>
+    
+
+        <!-- contenedor menu sobre carrusel -->
+        <div class="absolute z-5 mx-auto top-0 inset-0 flex flex-col items-center justify-start w-4/5
+                    sm:w-3/4
+                    md:w-1/2
+                    lg:w-1/3
+                    xl:w-2/4">
+
+            <!-- Cuadrado Banner -->
+            <div class="z-5 flex flex-col mt-4 justify-center items-start mx-32 
+                         w-full md:px-0 lg:px-0 xl:px-32  mb-16 rounded border-1">
+
+                <img src="https://ik.imagekit.io/kirt8tkpk/img/logosintexto.webp" class="w-[100px] mx-auto" alt="" loading="lazy">
+                <!-- texto banner -->
+                <img src="https://ik.imagekit.io/kirt8tkpk/img/titulo.png" alt="Título" >
+                
+
+            </div>
+        </div>
+        <nav id="navbar2" class="absolute left-1/2 -translate-x-1/2 mx-auto items-center px-4 sm:px-12 z-50 h-[40px] top-[18%] w-1/2 tracking-widest ">
+            <div class="container lg:px-2 items-center  flex flex-row w-full justify-between mx-auto text-white">
+                
+                <div class="flex flex-row items-center justify-between w-full">
+                    <ul id="opcionesNav2" class="h-8 flex flex-row items-center justify-start md:justify-start lg:justify-between w-full" style="text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);">
+                    <!-- Solo visible en pantallas grandes -->
+                            <div class="hidden xl:flex z-100 flex-row items-center justify-between w-full font-bold">
+                                <a href="#recinto" class="hover:bg-gray-500 z-100 hover:bg-opacity-40 duration-300 ease-in-out font-antic p-2">Recinto</a>
+                                <a href="#cabanas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Cabañas</a>
+                                <a href="#suites" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Suites</a>
+                                <a href="#instalaciones" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Instalaciones</a>
+                                <a href="#panoramas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Panoramas</a>
+                                <a href="#ubicacion" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Ubicación</a>
+                                
+                            </div>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <div class="overflow-hidden absolute left-1/2 w-full md:w-1/2 transform top-[70%] h-[80px] -translate-x-1/2 -translate-y-1/2 ">
+        <div id="textoDinamico" class="z-4 font-arial text-white font-geologica font-bold text-2xl lg:text-5xl w-full text-center tracking-wider "></div>
+
+    </div>
+    <div id="botonBajada" class="absolute left-1/2 w-1/2  top-[85%] h-[80px] -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center"> 
+        <a href="#bajada" class="animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></a>
+    </div>
+
+    </div>
+</section>
+
+<section id="bajada" class=" mx-auto h-[100vh] w-4/5 lg:w-3/5 mt-4 flex flex-col  items-center justify-start py-16 relative">
+    <h2 id="titulo" class="font-bold text-6xl md:text-3xl lg:text-8xl font-whisper text-fondoCrema">La Campiña</h2>
+    <div class=" mx-0 text-lg lg:text-3xl font-bold text-center mt-8 text-white font-antic tracking-[8px]">
+        Hermoso y tranquilo lugar familiar de <br>descanso en Algarrobo
+    </div>
+
+    <section class="mt-10">
+        <section class="carousel-3D-swiper-section w-[85%] relative">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- Slider main container -->
+            <div class="carousel-3D-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper" style="max-width: 1200px;">
+                    <!-- Slides -->
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square">
+                            <img class="aspect-square" src="https://ik.imagekit.io/kirt8tkpk/img/slider/1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Naturaleza</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square">
+                            <img class="aspect-square" src="https://ik.imagekit.io/kirt8tkpk/img/slider/2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Actividades</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square ">
+                            <img class="" src="https://ik.imagekit.io/kirt8tkpk/img/slider/3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Relajo</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square">
+                            <img class="" src="https://ik.imagekit.io/kirt8tkpk/img/slider/4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Comfort</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square ">
+                            <img class="" src="https://ik.imagekit.io/kirt8tkpk/img/slider/5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Playa</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aspect-square">
+                        <div class="image-wrapper aspect-square ">
+                            <img class="" src="https://ik.imagekit.io/kirt8tkpk/img/slider/6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="details">
+                            <h3 class="font-whisper text-4xl text-black">Bosques</h3> 
+                        </div>
+                    </div>
+ 
+                </div>
+                <!-- pagination -->
+
+            </div>
+        </section>
+    </section>
+
+    <div id="botonBajada2" class="absolute bottom-0 md:w-1/2 text-white flex flex-col items-center "> 
+        <h2 class="text-center text-2xl lg:text-3xl font-antic">Conoce nuestro recinto</h2>
+        <a href="#recinto" class="animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="100px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></a>
+    </div>
+</section>
+
+
+
+
+<!-- Sección de recinto-->
+<section id="recinto" class="hidden py-0 items-start mt-0 lg:py-8 h-screen lg:mt-4 md:flex flex-col justify-center "  >
+    <div class="container mx-auto flex flex-col  lg:items-center ">
+        <h2 class="tituloSection font-bold text-center text-fondoCrema font-whisper text-3xl 
+        md:text-5xl
+        lg:text-7xl">Descubre Nuestro Recinto</h2>
+        <p class="text-white font-antic text-center text-xl">Haz click en nuestras instalaciones para mas informacion!</p>
+
+        <div class="mx-auto md:w-[80%] lg:w-[70%] xl:w-[75%] relative" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+
+            <div id="imagenClick" class="absolute top-1/2 left-[60%] animate-ping z-50 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF">
+                    <path stroke="#000000" stroke-width="2" d="M80-480v-80h120v80H80Zm136 222-56-58 84-84 58 56-86 86Zm28-382-84-84 56-58 86 86-58 56Zm476 480L530-350l-50 150-120-400 400 120-148 52 188 188-80 80ZM400-720v-120h80v120h-80Zm236 80-58-56 86-86 56 56-84 86Z"/>
+                </svg>
+            </div>          
+            <div id="imagenClick2" class="absolute top-1/2 left-[60%] z-40 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#FFFFFF" stroke="#000000" stroke-width="15" >
+                    <path  d="M80-480v-80h120v80H80Zm136 222-56-58 84-84 58 56-86 86Zm28-382-84-84 56-58 86 86-58 56Zm476 480L530-350l-50 150-120-400 400 120-148 52 188 188-80 80ZM400-720v-120h80v120h-80Zm236 80-58-56 86-86 56 56-84 86Z"/>
+                </svg>
+            </div>
+
+                     <img id="imgRecintoActual" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero.webp" alt="Recinto" class="w-full h-full relative transition-opacity duration-500 ease-in-out" loading="lazy">
+
+                    <img id="imgRecinto1" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero1.webp" alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto2" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero2.webp" alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto3" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero3.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto4" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero4.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto5" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero5.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto6" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero6.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto7" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero7.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto8" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero8.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20" loading="lazy">
+
+                    <img id="imgRecinto9" loading="lazy" src="https://ik.imagekit.io/kirt8tkpk/img/recintoEntero9.webp"alt="Recinto" class="pointer-events-none absolute object-contain  w-full h-full    top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out z-20">
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+<div id="contenedorintermedio1" class="flex flex-col w-100vh ">
+    <section id="cabanas" class=" flex flex-col h-[100vh] w-full mt-16 bg-opacity-20 bg-black md:bg-opacity-0" >
+        <div class="container mx-auto h-full " >
+            <!-- titulo de section -->
+            <h2 class="tituloSection font-bold text-center font-whisper text-fondoCrema text-5xl 
+            md:text-5xl
+            lg:text-8xl">Cabañas</h2>
+
+
+            <div  class=" w-full lg:w-[82%] rounded-none bg-opacity-0 md:bg-black md:bg-opacity-40 justify-around lg:rounded-sm md:rounded-sm h-[85%]  lg:mt-2  flex flex-col lg:flex-row lg:h-[70vh] lg:py-4 mx-auto overflow-hidden shadow-lg " data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <div id="contCarruselCabanas" class="mx-auto lg:pl-6  w-[91%]  relative h-full md:h-1/2 lg:h-full lg:w-[50%]">
+                <div id="animation-carousel" class="absolute top-4 w-full h-[95%]" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-full overflow-hidden rounded-sm md:h-full lg:h-[100%]">
+                         <!-- Item 1 -->
+                        <div class="hidden duration-300 ease-linear" data-carousel-item>
+                            <img id="imagenCabana1" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/1.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-300 ease-linear" data-carousel-item>
+                            <img id="imagenCabana2" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/2.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-300 ease-linear" data-carousel-item="active">
+                            <img id="imagenCabana3" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/3.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-300 ease-linear" data-carousel-item>
+                            <img id="imagenCabana4" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/4.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-fondoVerde dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-fondoCrema dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-fondoVerde dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-fondoCrema dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                </div>
+            
+
+                
+                <div class="flex flex-col bg-none w-full mt-2 md:h-1/2 lg:h-[95%] lg:w-[30%] text-black flex-grow rounded-lg relative items-center   overflow-auto">
+                    <div class="z-0  absolute inset-0 bg-black opacity-0"></div>
+                    <h3 id="tituloCabanas" class="z-10 text-4xl md:text-4xl lg:text-5xl text-fondoCrema font-whisper">Selecciona la cabaña</h3>
+                    <select id="selectCabanas" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
+                        <option class="font-antic" value="cabaña de 2 a 4 personas" selected="">Cabañas 2 a 4 personas</option>
+                        <option class="font-antic" value="cabaña de 5 a 7 personas">Cabañas 5 a 7 personas</option>
+                    </select>
+
+                    <p id="parrafoCabanas" class="text-black scrollbar-thin border-fondoCrema bg-opacity-50 bg-fondoCrema border text-lg lg:text-lg h-3/4 font-antic w-5/6 px-4 lg:px-8 m-4 lg:mx-10  z-10 overflow-auto">
+                        <br>Esta cabaña cuenta con una pieza matrimonial con baño privado en el primer piso, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran tres camas de una plaza y una habitación con dos camas de una plaza. 
+<br><br>
+<strong>Incluye:</strong>
+
+    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1),jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml)..
+    <br>-Vajilla, tetera, refrigerador y microondas, detergente lavalozas, fósforos, y sal.
+    <br>-Televisor con DirecTV.
+    <br>-Quincho para asados y comedor en terraza.
+    <br>-Estacionamiento privado.
+    <br>-Acceso a juegos infantiles.
+    <br>-Acceso a piscinas (solo verano hasta Semana Santa).
+    <br>-Calefacción (solo invierno).<br><br>
+
+<strong>IMPORTANTE: La cabaña no cuenta con Wi-Fi ni artículos de aseo e higiene personal.
+*Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables. Opción de 1 futón para persona extra con valor adicional (consultar disponibilidad al momento de reservar)</strong><br><br>
+                    </p>
+
+                    <a id="botonCabanas" class="text-md cursor-pointer  hover:text-fondoCrema  transition duration-300  bg-fondoVerde font-whisper text-white w-[83%] flex justify-center text-center   opacity-90 tracking-widest py-2 text-3xl
+                    lg:py-1    
+                    lg:bottom-0
+                    lg:text-4xl 
+                    lg:px-10 ">Reservar</a>
+                
+                    </div>
+                     
+            </div>
+        </div>
+        
+    </section>
+</div>
+<div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden opacity-0 transition-opacity duration-300 ease-in overflow-y-auto overflow-x-hidden bg-black bg-opacity-40 fixed top-0 right-0 left-0 z-50 justify-center items-center w-full lg:w-full  md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+    <div class="relative p-4 w-full lg:w-3/4  max-h-full">
+        <!-- Modal content -->
+        <div class="relative mx-auto bg-fondoCrema rounded-md shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-around p-2 md:p-5  rounded-t dark:border-gray-600">
+                <h3 class="text-5xl text-center font-semibold text-gray-900 dark:text-white font-whisper w-full">
+                    Reserva
+                </h3>
+                <div id="subtituloModalCabana" class="absolute top-[70px] left-0 flex justify-center items-center w-full font-whisper text-3xl md:text-4xl"></div>
+                <button id='cerrarModal1' type="button" class="absolute top-4 border-fondoVerde border-2 rounded-[50%] right-4 text-fondoVerde bg-transparent hover:bg-fondoVerde hover:text-gray-900  text-sm lg:w-8 lg:h-8 w-4 h-4 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
+                    <svg class="lg:w-3 lg:h-3 w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col lg:flex-row w-full my-8">
+            <div class="flex flex-col w-full lg:w-2/3">
+            <div class="max-h-[350px] lg:max-h-[500px] scrollbar-thin overflow-y-auto lg:mx-[50px] mb-[30px] mt-4" style="overflow-x: hidden;">
+            <p id="parrafoTerminos" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-sm lg:text-lg font-poppins px-4 lg:px-16">  
+
+    <br><b style="font-size: 1.5em; text-align: center;">Términos y condiciones Temporada ALTA</b> <br>
+
+    Periodo 6 de diciembre 2024 hasta 16 de marzo 2025 <br> Semana Santa (desde 11 a 20 de abril 2025) <br> Vacaciones de Invierno (2025) <br> Fiestas Patrias (desde el 12 a 21 de septiembre 2025)
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">RESERVAS Y GARANTÍAS:</strong>
+    <br>
+    Las reservas se confirman sólo con el 50% del total de la estadía por adelantado, ya sea por transferencia, depósito o efectivo. <br><br>Durante el Check-in y antes de ingresar a su alojamiento, debe identificarse con documento de identidad (cédula o pasaporte) y pagar el saldo pendiente de la reserva.<br><br> Además, deberá dejar una garantía de $20.000 por concepto de posibles daños, malas condiciones de entrega y/o extravío de llave/llavero. Dicha garantía será devuelta durante el Check-out luego de revisión del inmueble en donde alojó y según condiciones de entrega.
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">MODIFICACIONES DE FECHA Y CANCELACIONES</strong>
+    <br>
+    <strong style="font-size: 1.2em; text-align: center;">Con mínimo 30 días de anticipación:</strong>
+    <br>
+    Modificaciones: sin cobro de gasto administrativo, hasta 1 cambio. Cambios adicionales por cobro administrativo de $10.000.
+    <br>
+    Cancelaciones: devolución íntegra del 100% de lo abonado.
+    <br><br>
+
+    <strong style="font-size: 1.2em; text-align: center;">Con mínimo 15 días de anticipación:</strong>
+    <br>
+    Modificaciones: cobro de $10.000 de gasto administrativo y sujeto a disponibilidad (puede convertirlo en voucher del 100% de lo abonado menos el gasto administrativo para usar dentro de 1 año y sujeto a disponibilidad de fechas).
+    <br>
+    Cancelaciones: devolución del 50% de lo abonado.
+    <br><br>
+
+    <strong style="font-size: 1.2em; text-align: center;">Con menos de 15 días de anticipación:</strong>
+    <br>
+    Modificaciones: cobro de $10.000 de gasto administrativo, sujeto a disponibilidad, y solo si se encuentra a otra familia de reemplazo que reserve las mismas noches originalmente reservadas por usted, de lo contrario, no será posible modificar reserva.
+    <br>
+    Cancelaciones: no hay devolución posible. La única alternativa será usar la reserva como originalmente fue realizada.
+    <br><br>
+                
+    <strong style="font-size: 1.2em; text-align: center;">CHECK-IN</strong> es de 15hrs a 22hrs <br> <strong style="font-size: 1.2em; text-align: center;">CHECK-OUT</strong> es a las 11:00hrs. <br>Se irá cobrando gradualmente por cada hora o fracción adicional según valores más abajo.
+    <br>
+    Posibilidad de Early Check-in o Late Check-out según disponibilidad.
+    <br>
+    Valores: CLICK AQUÍ
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong>Piscinas SOLO disponible desde DICIEMBRE hasta fin de SEMANA SANTA.</strong>
+    <br><br>
+    <b>PROHIBIDO FUMAR DENTRO DE CABAÑAS/SUITES SEGÚN LEY 20.660</b>.<br> En caso de no cumplir con la ley, se realizará el COBRO TOTAL de la garantía para cubrir los costos de limpieza, lavado y recuperación de los interiores a un estado libre de humo.
+    <br><br>
+    <strong></strong>Horario del recinto: Apertura portón 9:00hrs / Cerrado portón 23:00hrs</strong>
+    <br>
+    Si necesita entrar o salir fuera del horario, favor de avisar con anticipación.
+    <br>
+    Durante el Check-out se revisará el estado de la cabaña, su inventario y su llave/llavero. En caso de estar todo bien, se hace devolución de las garantías correspondientes.
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">CABAÑAS FAMILIARES DE DESCANSO.<br><br></strong> <strong>NO se permiten ruidos o música fuerte ni parlantes exteriores.</strong> Mantener música dentro de la cabaña/suite media a baja. Luego de las 21hrs, bajar la voz en el exterior, y no se permite música en suites; dentro de cabañas solo se permite música baja para permitir descanso de pasajeros (solo en fiestas patrias, navidad, y año nuevo, hay mayor flexibilidad).
+    <br><br>    
+<strong>Se prohíben visitas e ingreso de personas no autorizadas a nuestro recinto privado.</strong> Las instalaciones son de uso exclusivo para clientes registrados. Si desea recibir visitas, debe avisar a recepción y hacer el pago correspondiente por persona según disponibilidad. Valores: CLICK AQUÍ
+    <br><br>
+<strong>Al final de la estadía, deben dejar la vajilla (platos, cubiertos, tazas, etc.) lavada y guardada, y dejar la basura en bolsas en sus basureros y sin líquidos.</strong>
+    <br><br>
+<strong>Se permiten mascotas pequeñas y medianas sólo en cabañas pagando la tarifa adicional.</strong> Deben llevar correa, su propia cama y preocuparse de sus desechos (recoger y dejar limpio). Mascotas deben estar supervisadas por sus dueños en todo momento y <strong>NO pueden ingresar a piscinas.</strong>
+    <br><br>
+    <strong>Servicio de Housekeeping/Limpieza no está incluido.</strong><br> Durante su estadía, el aseo y orden es de responsabilidad de los pasajeros. Deben mantener limpieza y orden alrededor de su cabaña, como también hacerse cargo de limpieza en áreas comunes de aquellas cosas/instalaciones que hayan ensuciado integrantes de su grupo (mascotas incluidas), de lo contrario, se cobrará garantía completa o parcial según el caso. A los 5 días pueden pedir recambio de toallas y sábanas.
+    <br><br>
+    <strong>Saldos pendientes tienen una vigencia máxima de 1 año y solo si se aprueban por administración.</strong>
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    Cabañas La Campiña se reserva el derecho de ingreso y de intervenir en conflictos, problemas de convivencia o actos que atenten contra la seguridad y bienestar tanto de pasajeros como del staff, y dar término inmediato a la estadía de cualquier persona que no se adhiera a los términos y condiciones.<br><br>
+            </p>
+            </div>
+            </div>
+            <form class="p-0 md:p-5 w-full lg:w-1/3">
+                <div class="grid lg:gap-4 lg:mb-4 grid-cols-1 sm:grid-cols-2">
+                    <div class="col-span-1 mx-1">
+                        <label for="start-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
+                        <input type="date" value="" name="fechaInicio" id="fechaInicioC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="end-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
+                        <input type="date" name="fechaTermino" id="fechaTerminoC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="personas" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
+                        <input type="number" name="cantidadPersonas" id="cantidadPersonasC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="mascotas" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Viene con mascota?</label>
+                        <select id="mascotaC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">Seleccione</option>
+                            <option value="Si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2 p-2">
+                        <label for="adicional" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Información adicional</label>
+                        <textarea id="adicionalC" rows="4" class="block h-[75px] lg:h-[150px] p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Añada informac  ión adicional"></textarea>                    
+                    </div>
+
+                    <div class="col-span-2 flex flex-row items-center justify-between ">
+                        <label for="confirmacion" class="block lg:mb-2  text-xs lg:text-sm font-medium text-gray-900 dark:text-white"> Confirmo que he leído todo lo que incluye y no incluye la cabaña y acepto los términos y condiciones </label>
+                        <input id="checkboxCabana" type="checkbox" required>
+                    </div>
+                </div>
+                <div class="flex justify-around w-full">
+                <a id="botonEnvioCabanas" href="" class="text-white mb-4 mt-4 inline-flex items-center bg-fondoVerde opacity-80 hover:opacity-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Enviar cotización
+               </a></div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contenedorintermedio2" class=" mx-auto flex flex-col " >
+    <section id="suites" class="flex flex-col h-[100vh] w-full mt-0 lg:mt-16  bg-black bg-opacity-30 md:bg-opacity-0" >
+        <div class="container mx-auto h-full " >
+            <!-- titulo de section -->
+            <h2 class="tituloSection font-bold text-center font-whisper text-black text-5xl 
+            md:text-5xl
+            lg:text-8xl">Suites</h2>
+
+        <!-- cuerpo carrusels -->
+            <div  class=" w-full rounded-none lg:w-[82%] md:bg-black md:bg-opacity-30 justify-around  
+            h-[85%]  lg:mt-2  flex flex-col lg:flex-row lg:h-[70vh] lg:py-4 mx-auto overflow-hidden" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+
+                <div id="contCarruselSuites" class="mx-auto lg:pl-6 w-[91%] relative h-full md:h-1/2 lg:h-full lg:w-[50%]">
+                <div id="animation-carousel" class="absolute top-4 w-full h-[95%]" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-full overflow-hidden  md:h-full lg:h-[100%]">
+                         <!-- Item 1 -->
+                        <div class="hidden duration-500 ease-linear" data-carousel-item>
+                            <img id="imagenSuite1" src="https://ik.imagekit.io/kirt8tkpk/img/suites/1.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-500 ease-linear" data-carousel-item>
+                            <img id="imagenSuite2" src="https://ik.imagekit.io/kirt8tkpk/img/suites/2.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-500 ease-linear" data-carousel-item="active">
+                            <img id="imagenSuite3" src="https://ik.imagekit.io/kirt8tkpk/img/suites/3.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-500 ease-linear" data-carousel-item>
+                            <img id="imagenSuite4" src="https://ik.imagekit.io/kirt8tkpk/img/suites/4.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                </div>
+            
+
+                
+                <div class="flex flex-col bg-none  w-full mt-4 md:h-1/2 lg:h-[95%] lg:w-1/3 text-black flex-grow rounded-md relative items-center lg:m-4 overflow-auto">
+                    <div class="z-0 absolute inset-0 bg-black opacity-0"></div>
+                    <h3 id="tituloSuites" class="z-10 backtext-center text-4xl md:text-4xl lg:text-5xl text-black font-whisper">Selecciona la suite</h3>
+                    <select id="selectSuites" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
+                        <option class="font-antic" value="Suite de segundo piso - Standart">Suites para 1 a 2 personas - Standart (Segundo Piso)                        </option>
+                        <option class="font-antic" value="Suite de primer piso - Superior">Suites para 1 a 2 personas - Superior (Primer Piso)</option>
+                        <option class="font-antic" value="Suite de segundo piso - Deluxe">Suites para 1 a 2 personas - Deluxe - (Segundo Piso) </option>
+                       
+                    </select>
+                    <p id="parrafoSuites" class="text-black scrollbar-thin border-fondoCrema bg-opacity-50 bg-fondoCrema border text-lg lg:text-lg h-3/4 font-antic w-5/6 px-4 lg:px-8 m-4 lg:mx-10  z-10 overflow-auto"><br> Esta suite cuenta con cama de dos plazas, pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. 
+                        <br><br>
+                        Posee vista al jardín (con opción de sillón cama extra por costo adicional y según disponibilidad).
+                        <br><br>
+                        Incluye:
+                        <br>
+                        -Ropa de cama<br>
+                        -Juego de toallas<br>
+                        -Secador de cabello<br>
+                        -Rollo de papel higiénico(x1)<br>
+                        -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br>
+                        -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.<br>
+                        -Acceso a quinchos grandes y comedores comunitarios al exterior.<br>
+
+                        -Estacionamiento.<br>
+                        -Acceso a juegos infantiles.<br>
+                        -Acceso a piscinas (solo verano).<br>
+                        <br><br>
+                        <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en los suites.
+                        *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>
+                    </p>
+
+                    <a id="botonSuites"  class="text-md hover:text-fondoCrema  transition duration-300  cursor-pointer bg-fondoVerde font-whisper text-white w-[83%] flex justify-center text-center   opacity-90 tracking-widest py-2 text-3xl
+                           lg:py-1    
+                           lg:bottom-0
+                           lg:text-4xl 
+                           lg:px-10 ">Reservar</a>
+                
+                    </div>
+                    
+                    
+            </div>
+        </div>
+
+        
+
+        
+        
+    </section>
+</div>
+<!-- Main modal -->
+<div id="crud-modal2" tabindex="-1" aria-hidden="true" class="hidden opacity-0 transition-opacity duration-300 ease-in overflow-y-auto overflow-x-hidden bg-black bg-opacity-40 fixed top-0 right-0 left-0 z-50 justify-center items-center w-full lg:w-full  md:inset-0 h-[calc(100%-1rem)] max-h-full ">
+    <div class="relative p-4 w-full lg:w-3/4  max-h-full">
+        <!-- Modal content -->
+        <div class="relative mx-auto bg-fondoCrema rounded-md shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-around p-2 md:p-5  rounded-t dark:border-gray-600">
+                <h3 class="text-5xl text-center font-semibold text-gray-900 dark:text-white font-whisper w-full">
+                    Reserva
+                </h3>
+                <div id="subtituloModalSuite" class="absolute top-[70px] left-0 flex justify-center items-center w-full font-whisper text-3xl md:text-4xl"></div>
+                <button id='cerrarModal2' type="button" class="absolute top-4 border-fondoVerde border-2 rounded-[50%] right-4 text-fondoVerde bg-transparent hover:bg-fondoVerde hover:text-gray-900  text-sm lg:w-8 lg:h-8 w-4 h-4 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal">
+                    <svg class="lg:w-3 lg:h-3 w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col lg:flex-row w-full my-8">
+                <div class="flex flex-col w-full lg:w-2/3">
+                <div class="max-h-[350px] lg:max-h-[500px] scrollbar-thin overflow-y-auto lg:mx-[50px] mb-[30px] mt-4" style="overflow-x: hidden;">
+                <p id="parrafoTerminos" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-sm lg:text-lg font-poppins px-4 lg:px-16">  
+    
+    <br><b style="font-size: 1.5em; text-align: center;">Términos y condiciones Temporada ALTA</b> <br>
+
+    Periodo 6 de diciembre 2024 hasta 16 de marzo 2025 <br> Semana Santa (desde 11 a 20 de abril 2025) <br> Vacaciones de Invierno (2025) <br> Fiestas Patrias (desde el 12 a 21 de septiembre 2025)
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">RESERVAS Y GARANTÍAS:</strong>
+    <br>
+    Las reservas se confirman sólo con el 50% del total de la estadía por adelantado, ya sea por transferencia, depósito o efectivo. <br><br>Durante el Check-in y antes de ingresar a su alojamiento, debe identificarse con documento de identidad (cédula o pasaporte) y pagar el saldo pendiente de la reserva.<br><br> Además, deberá dejar una garantía de $20.000 por concepto de posibles daños, malas condiciones de entrega y/o extravío de llave/llavero. Dicha garantía será devuelta durante el Check-out luego de revisión del inmueble en donde alojó y según condiciones de entrega.
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">MODIFICACIONES DE FECHA Y CANCELACIONES</strong>
+    <br>
+    <strong style="font-size: 1.2em; text-align: center;">Con mínimo 30 días de anticipación:</strong>
+    <br>
+    Modificaciones: sin cobro de gasto administrativo, hasta 1 cambio. Cambios adicionales por cobro administrativo de $10.000.
+    <br>
+    Cancelaciones: devolución íntegra del 100% de lo abonado.
+    <br><br>
+
+    <strong style="font-size: 1.2em; text-align: center;">Con mínimo 15 días de anticipación:</strong>
+    <br>
+    Modificaciones: cobro de $10.000 de gasto administrativo y sujeto a disponibilidad (puede convertirlo en voucher del 100% de lo abonado menos el gasto administrativo para usar dentro de 1 año y sujeto a disponibilidad de fechas).
+    <br>
+    Cancelaciones: devolución del 50% de lo abonado.
+    <br><br>
+
+    <strong style="font-size: 1.2em; text-align: center;">Con menos de 15 días de anticipación:</strong>
+    <br>
+    Modificaciones: cobro de $10.000 de gasto administrativo, sujeto a disponibilidad, y solo si se encuentra a otra familia de reemplazo que reserve las mismas noches originalmente reservadas por usted, de lo contrario, no será posible modificar reserva.
+    <br>
+    Cancelaciones: no hay devolución posible. La única alternativa será usar la reserva como originalmente fue realizada.
+    <br><br>
+                
+    <strong style="font-size: 1.2em; text-align: center;">CHECK-IN</strong> es de 15hrs a 22hrs <br> <strong style="font-size: 1.2em; text-align: center;">CHECK-OUT</strong> es a las 11:00hrs. <br>Se irá cobrando gradualmente por cada hora o fracción adicional según valores más abajo.
+    <br>
+    Posibilidad de Early Check-in o Late Check-out según disponibilidad.
+    <br>
+    Valores: CLICK AQUÍ
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong>Piscinas SOLO disponible desde DICIEMBRE hasta fin de SEMANA SANTA.</strong>
+    <br><br>
+    <b>PROHIBIDO FUMAR DENTRO DE CABAÑAS/SUITES SEGÚN LEY 20.660</b>.<br> En caso de no cumplir con la ley, se realizará el COBRO TOTAL de la garantía para cubrir los costos de limpieza, lavado y recuperación de los interiores a un estado libre de humo.
+    <br><br>
+    <strong></strong>Horario del recinto: Apertura portón 9:00hrs / Cerrado portón 23:00hrs</strong>
+    <br>
+    Si necesita entrar o salir fuera del horario, favor de avisar con anticipación.
+    <br>
+    Durante el Check-out se revisará el estado de la cabaña, su inventario y su llave/llavero. En caso de estar todo bien, se hace devolución de las garantías correspondientes.
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    <strong style="font-size: 1.2em; text-align: center;">CABAÑAS FAMILIARES DE DESCANSO.<br><br></strong> <strong>NO se permiten ruidos o música fuerte ni parlantes exteriores.</strong> Mantener música dentro de la cabaña/suite media a baja. Luego de las 21hrs, bajar la voz en el exterior, y no se permite música en suites; dentro de cabañas solo se permite música baja para permitir descanso de pasajeros (solo en fiestas patrias, navidad, y año nuevo, hay mayor flexibilidad).
+    <br><br>    
+<strong>Se prohíben visitas e ingreso de personas no autorizadas a nuestro recinto privado.</strong> Las instalaciones son de uso exclusivo para clientes registrados. Si desea recibir visitas, debe avisar a recepción y hacer el pago correspondiente por persona según disponibilidad. Valores: CLICK AQUÍ
+    <br><br>
+<strong>Al final de la estadía, deben dejar la vajilla (platos, cubiertos, tazas, etc.) lavada y guardada, y dejar la basura en bolsas en sus basureros y sin líquidos.</strong>
+    <br><br>
+<strong>Se permiten mascotas pequeñas y medianas sólo en cabañas pagando la tarifa adicional.</strong> Deben llevar correa, su propia cama y preocuparse de sus desechos (recoger y dejar limpio). Mascotas deben estar supervisadas por sus dueños en todo momento y <strong>NO pueden ingresar a piscinas.</strong>
+    <br><br>
+    <strong>Servicio de Housekeeping/Limpieza no está incluido.</strong><br> Durante su estadía, el aseo y orden es de responsabilidad de los pasajeros. Deben mantener limpieza y orden alrededor de su cabaña, como también hacerse cargo de limpieza en áreas comunes de aquellas cosas/instalaciones que hayan ensuciado integrantes de su grupo (mascotas incluidas), de lo contrario, se cobrará garantía completa o parcial según el caso. A los 5 días pueden pedir recambio de toallas y sábanas.
+    <br><br>
+    <strong>Saldos pendientes tienen una vigencia máxima de 1 año y solo si se aprueban por administración.</strong>
+    <br><br>
+    ────────────────────────────────────────────────────── <br><br>
+    Cabañas La Campiña se reserva el derecho de ingreso y de intervenir en conflictos, problemas de convivencia o actos que atenten contra la seguridad y bienestar tanto de pasajeros como del staff, y dar término inmediato a la estadía de cualquier persona que no se adhiera a los términos y condiciones.<br><br>
+            </p>
+            </div>
+            </div>
+            <form class="p-0 md:p-5 w-full lg:w-1/3">
+                <div class="grid lg:gap-4 lg:mb-4 grid-cols-1 sm:grid-cols-2">
+                    <div class="col-span-1 mx-1">
+                        <label for="start-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
+                        <input type="date" value="" name="fechaInicio" id="fechaInicio" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="end-date" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
+                        <input type="date" name="fechaTermino" id="fechaTermino" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="personas" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
+                        <input type="number" name="cantidadPersonas" id="cantidadPersonas" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+                    </div>
+                    <div class="col-span-1 mx-1">
+                        <label for="infantes" class="block mb-2 text-xs lg:text-sm  font-medium text-gray-900 dark:text-white">Viene con infante?</label>
+                        <select id="infantesSuite" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">Seleccione</option>
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2">
+                        <label for="adicional" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Información adicional</label>
+                        <textarea id="adicional" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Añada información adicional"></textarea>                    
+                    </div>
+                    <div class="col-span-2 flex flex-row items-center justify-between">
+                        <label for="confirmacion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Confirmo que leí todo lo que incluye la suite </label>
+                        <input id="checkboxSuite" type="checkbox" required>
+                    </div>
+                </div>
+                <div class="flex justify-around w-full">
+                <a id="botonEnvioSuites" href="" class="text-white inline-flex items-center bg-fondoVerde opacity-80 hover:opacity-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Enviar cotización
+               </a></div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contenedor2" class="flex flex-col">
+
+
+
+<section id="instalaciones" class="h-[95vh]  w-full flex flex-col items-center">
+    <h2 class="tituloSection font-bold text-center text-black font-whisper mt-8 mb-2 text-5xl 
+    md:text-5xl
+    lg:text-8xl">Instalaciones</h2>
+
+    <div id="contenedorInstalaciones" class="relative mx-auto w-[77%] h-[80vh]  flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="flex  pl-0 flex-col object-cover flex-shrink py-0 my-0 overflow-hidden justify-center w-full h-full lg:flex-wrap 
+        lg:flex-row 
+        lg:pb-32
+        lg:h-[35%]
+        ">
+            
+            <div id="instalacionJardin" class="flip-container flex w-full h-1/5  lg:h-[200%] lg:w-[22%] lg:mx-2 my-2 lg:aspect-square overflow-hidden relative ">
+                <div class="flipper"><img class=" w-full h-full object-cover  transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/jardin.webp" loading="lazy">
+                <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div> <!-- Capa negra -->
+                <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;"> <!-- Texto centrado -->
+                    <span class="text-4xl font-whisper">Jardines y senderos</span>
+                </div>
+            </div>
+            </div>
+
+            <div id="instalacionPiscina" class="flip-container flex w-full h-1/5  lg:h-[200%] lg:w-[22%] lg:mx-2 my-2 lg:aspect-square overflow-hidden relative">
+                <div class="flipper"><img class="imgInstalacion  w-full h-full object-cover  transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Piscina1.webp" loading="lazy">
+                <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div> <!-- Capa negra -->
+                <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;"> <!-- Texto centrado -->
+                    <span class="text-4xl font-whisper">Piscinas</span>
+                </div>
+             </div>   
+            </div>    
+            
+            <div  id="instalacionJuegos" class="flip-container flex w-full h-1/5  lg:h-[200%] lg:w-[22%] lg:mx-2 my-2 lg:aspect-square overflow-hidden relative">
+                <div class="flipper"><img class=" w-full h-full object-cover  transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/JuegosNinos.webp" loading="lazy">
+                <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div> <!-- Capa negra -->
+                <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;"> <!-- Texto centrado -->
+                    <span class="text-4xl font-whisper">Juegos para niños</span>
+                </div>
+            </div>    
+            </div>
+        
+            <div id="instalacionQuincho" class="flip-container flex w-full h-1/5  lg:h-[200%] lg:w-[22%] lg:mx-2 mt-2 mb-0 lg:aspect-square overflow-hidden relative">
+                <div class="flipper"><img class=" w-full h-full object-cover  transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Quincho.webp" loading="lazy">
+                <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div> <!-- Capa negra -->
+                <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;"> <!-- Texto centrado -->
+                    <span class="text-4xl font-whisper">Quinchos</span>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div  id="instalacionAmenidades" class="flip-container relative flex h-1/5 w-full lg:mt-4 lg:h-1/3 lg:w-[92%]  
+                    md:flex-row  
+                    md:justify-between overflow-hidden">
+                    <div class="flipper"><img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp" loading="lazy">
+                    <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;"> <!-- Texto centrado -->
+                        <span class=" text-4xl md:text-5xl lg:text-7xl font-whisper text-center">Amenidades y Servicios adicionales</span>
+                    </div>
+            </div>
+        
+        </div>    
+        
+    </div>
+</section>
+
+
+<section id="panoramas" class="h-[90vh] mb-10 font-antic w-full flex flex-col items-center " >
+        <h2 class="tituloSection font-bold text-center mt-6 text-black font-whisper text-5xl 
+        md:text-5xl
+        lg:text-8xl"">Panoramas</h2>
+
+            
+            <div class="mx-auto w-[80%] md:w-[80%]  lg:w-[70%] xl:w-[70%] 2xl:w-[70%]  mb-4 h-[80vh] md:flex md:flex-row lg:flex lg:justify-center overflow-hidden " data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                <aside id="sidebarPanoramas" class=" w-full md:mx-4 bg-opacity-50 h-1/8  md:w-1/3 lg:w-1/4 md:h-full top-0 md:py-0 left-0 z-40 md:transition-transform  sm:translate-x-0" aria-label="Sidebar">
+                <div id="contenedorDeLosPanoramas" class=" w-full overflow-hidden dark:bg-gray-800">
+                <ul class="w-full relative flex flex-wrap flex-row md:h-full lg:space-y-2  md:items-center justify-center md:flex-col gap-0 lg:gap-2 overflow-hidden  sm:space-y-0 ">
+                <li class="w-[45%] md:w-full flex flex-col items-center justify-center md:py-4">
+                <button type="button" class="togglePanoramas rounded-md md:rounded-full flex flex-col md:flex-row items-center p-1 justify-center w-full h-full md:h-30 md:p-4 text-base text-white transition duration-75 group bg-[#F2C078] shadow-lg">
+                            <img src="https://ik.imagekit.io/kirt8tkpk/img/iconos/playas.png" alt="Playas" class="w-5 h-5 md:w-10 md:h-10">
+
+                            <span class="text-center flex-1 font-antic font-bold md:ms-3  rtl:text-right whitespace-nowrap tracking-widest text-xs md:text-sm lg:text-base text-black">Playas<br>Caminables</span>
+                               
+
+                    </button>
+                         <div id="dropdownNaturaleza"class="flex w-full contenedorDesplegablePanoramas ml-10 mt-4 max-h-0 overflow-hidden transition-all duration-200 ease-in-out"> 
+                         <ul id="dropdown-example" class="w-full flex flex-row md:flex-col md:py-2 md:space-y-2">
+                               <li>
+                                  <a href="#" class="botonUbicacion flex  items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa Tunquen</a>
+                               </li>
+
+                               <li>
+                                <a href="#" class="botonUbicacion flex  items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa Grande El Yeco</a>
+                             </li>
+
+                               <li>
+                                  <a href="#" class="botonUbicacion flex     items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lgs"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa El Mirasol</a>
+                               </li>
+
+                               <li>
+                                <a href="#" class="botonUbicacion flex     items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa Algarrobo Norte</a>
+                             </li>
+
+                             <li>
+                                <a href="#" class="botonUbicacion flex     items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa Internacional</a>
+
+                             </li>
+                             <li>
+                                <a href="#" class="botonUbicacion flex     items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa Los Tubos</a>
+                             </li>
+
+                             <li>
+                                <a href="#" class="botonUbicacion flex     items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class=" w-4 h-4">Playa El Canelo / El Canelillo</a>
+
+                             </li>
+
+                         </ul>
+                        </div> 
+                      
+                      </li>
+                      <li class="w-[45%] md:w-full flex flex-col items-center justify-center md:py-4">
+                        <button type="button" class="togglePanoramas rounded-md md:rounded-full flex flex-col md:flex-row items-center p-1 justify-center w-full h-full md:h-30 md:p-4 text-base text-white transition duration-75 group bg-[#FAEDCA] shadow-lg">
+                            <img src="https://ik.imagekit.io/kirt8tkpk/img/iconos/verano.png" alt="Playas" class="w-5 h-5 md:w-10 md:h-10">
+                                                       <span class="text-center flex-1 font-antic font-bold md:ms-3  rtl:text-right whitespace-nowrap tracking-widest text-xs md:text-sm lg:text-base text-black">Playas<br>para Baño</span>
+                               
+                         </button>
+                  <div id="dropdownRestaurantes"class="contenedorDesplegablePanoramas ml-4 mt-4 max-h-0 overflow-hidden transition-all duration-200 ease-in-out">
+                  <ul id="dropdown-example1" class=" py-2 space-y-2">
+                        <li>
+                           <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Playa Las Cadenas</a>
+                        </li>
+                        <li>
+                           <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Playa El Pejerrey</a>
+                        </li>
+                        <li>
+                           <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Playa El Canelillo</a>
+                        </li>
+                  </ul></div>
+                     </li>
+                     <li class="w-[45%] md:w-full flex flex-col items-center justify-center md:py-4">
+                        <button type="button" class="togglePanoramas rounded-md md:rounded-full flex flex-col md:flex-row items-center p-1 justify-center w-full h-full  md:p-4 text-base text-white transition duration-75 group bg-[#C1DBB3] shadow-lg">
+                            <img src="https://ik.imagekit.io/kirt8tkpk/img/iconos/actividades.png" alt="Playas" class="w-5 h-5 md:w-10 md:h-10">
+                            <span class="text-center flex-1 font-antic font-bold md:ms-3  rtl:text-right whitespace-nowrap tracking-widest text-xs md:text-sm lg:text-base text-black">Actividades</span>
+                            
+                        </button>
+                        <div id="dropdownAire"class="contenedorDesplegablePanoramas ml-10 mt-8 max-h-0 overflow-hidden transition-all duration-200 ease-in-out">
+                        <ul id="dropdown-example3" class=" py-2 space-y-4 ml-10">
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Karting</a>
+                              </li>
+
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Cabalgatas, juegos mecánicos <br>y otros</a>
+
+                              </li>
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Paseos en Lancha</a>
+
+                              </li>
+                              <li>
+      
+                                <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg  pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 md:text-lg text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Buceo</a>
+                             </li>
+                        </ul></div>
+                     </li>
+                     <li class="w-[45%] md:w-full flex flex-col items-center justify-center md:py-4">
+                        <button type="button" class="togglePanoramas rounded-md md:rounded-full flex flex-col md:flex-row items-center p-1 justify-center w-full h-full  md:h-30 md:p-4 text-base text-white transition duration-75 bg-[#7EBC89] shadow-xl">
+                            <img src="https://ik.imagekit.io/kirt8tkpk/img/iconos/camera.png" alt="Playas" class="w-5 h-5 md:w-10 md:h-10">
+                            <span class="text-center flex-1 font-antic font-bold md:ms-3  rtl:text-right whitespace-nowrap tracking-widest text-xs md:text-sm lg:text-base text-black">Atractivos<br>Turísticos</span>
+                             
+                            </button>
+                        
+                        <div id="dropdownNegocios"class="contenedorDesplegablePanoramas max-h-0 ml-10 mt-8 overflow-hidden transition-all duration-200 ease-in-out">
+                        <ul id="dropdown-example4" class=" py-2 space-y-4">
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">La Cueva de Tunquen</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Humedal de Tunquen</a>
+                              </li>
+                              <li>
+                                 <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">La Cueva del Pirata</a>
+                              </li>
+                             <li>
+                                <a href="#" class="botonUbicacion flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Humedal El Membrillo</a>
+                             </li>
+                             <li>
+                                <a href="#" class="botonUbicacion  flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 text-lg"><img src="src/img/iconos/play-button.png" alt="Buceo" class="w-4 h-4">Pueblito Los Artesanos</a>
+                             </li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                </aside>
+
+                <div id="contenidoPanoramasInicial" class="relative h-full  flex flex-row gap-4 justify-center items-center md:w-2/3 lg:w-3/4 md:h-full font-whisper text-center text-5xl text-fondoVerde bg-fondoCrema bg-opacity-30 p-4 ">Selecciona un panorama</div>
+                <div id="contenidoPanoramas" class="hidden relative h-full flex-row w-full md:w-3/4 md:h-full bg-fondoCrema bg-opacity-0 p-4 ">
+                    
+                    <div id="contenedorContenidoPanorama" class="flex flex-col flex-shrink h-full w-full lg:w-2/3 gap-0 ">
+                        <div id="tituloPanorama" class="text-center text-3xl lg:text-5xl py-3 bg-fondoTextos font-whisper text-black"></div>
+                        <div id="textoPanorama" class="scrollbar-thin w-full h-3/5 lg:h-4/5 px-[16px] lg:px-[48px] py-[16px] text-sm lg:text-lg bg-fondoTextos overflow-auto">                             
+                        </div>
+                        <div id="tiempoViaje" class="z-10 flex flex-row justify-around bg-fondoTextos text-fondoVerde p-4 font-geologica"></div>
+                        
+                        <div id="imagenPanorama" class="w-full h-1/5 max-h-1/5 bg-transparent overflow-hidden flex flex-row"></div>
+                    </div>
+                    <div id="map" class="hidden relative w-1/2 h-full py-4 z-0 text-5xl items-center lg:flex justify-center bg-slate-400 font-whisper text-center text-white">
+                        <!-- Aumentar el z-index para que sea visible sobre el mapa -->
+                        
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  
+                </div>
+            
+            
+</section>
+
+<section id="ubicacion" class=" tituloSection w-full mx-auto h-screen flex flex-col" >
+    <h2 class="tituloSection font-bold text-center text-black font-whisper text-5xl 
+    md:text-5xl
+    lg:text-8xl"">Ubicacion</h2>   
+
+    <div class="mt-8 w-full h-screen relative flex flex-col justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        
+         <!-- Capa negra -->
+         <div class="z-10 pointer-events-none absolute rounded-md mix-blend-lighten flex w-3/4 justify-around h-4/5 mx-auto top-0 left-0 right-0 bottom-0  bg-fondoCrema opacity-30"></div>
+
+        <iframe class="z-0 absolute  flex w-3/4 justify-around h-4/5 mx-auto top-0 left-0 right-0 bottom-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13332.277028340457!2d-71.6470433!3d-33.3431404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966213cb221bfdd3%3A0xa438340a62f59e9a!2zQ2FiYcOxYSBMYSBDYW1wacOxYQ!5e0!3m2!1ses-419!2scl!4v1731279459381!5m2!1ses-419!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+    </div>
+</section>
+</div> 
+
+
+<section class="" >
+   <footer class="bg-cafe w-full h-3/5">
+    <div class="flex flex-col w-full justify-center items-center h-full">
+
+    <h2 class="text-6xl text-fondoCrema font-whisper w-full text-center mt-10 md:w-full">La Campiña</h2>   
+
+    <div class="flex flex-col md:flex-row w-full items-center justify-around mx-[30px] mb-20">
+        
+        <div class="w-full md:w-1/4 h-full ">
+        <img src="https://ik.imagekit.io/kirt8tkpk/img/Lgo.webp" alt="Logo" class=" mx-auto rounded-full md:w-[150px]">
+        </div>
+
+
+
+        <div class="flex flex-col justify-center w-full md:w-1/4 ">
+            <p class="font-bold font-whisper text-5xl text-center">Contáctanos</p>
+            <p class="font-antic text-fondoCrema md:text-xl text-center">Celular/WhatsApp: +56 9 7900 4253</p>
+            <p class="font-antic text-fondoCrema md:text-xl text-center">Email: contacto@cabanaslacampina.cl</p>
+        </div>
+        
+
+        <div class="flex flex-col  justify-center items-center w-full md:w-1/4">
+            <p class="font-bold  font-whisper text-5xl text-center">Nuestras Redes</p>
+            <a href="https://linktr.ee/cabanaslacampina.cl" class="font-antic md:text-xl text-center text-fondoCrema"><img src="https://ik.imagekit.io/kirt8tkpk/img/Linktree_logo.svg.png" class="w-1/3 mx-auto" alt=""></a>
+            </div>
+        </div>   
+        
+        
+    </div>
+   </footer>
+</section>
+
+
+    
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init(); // Asegúrate de que esto se ejecute después de que AOS se haya cargado
+</script>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+<script type="module" src="./src/js/script.js"></script>
+
+
+</body>
+
+</html>
