@@ -1,5 +1,3 @@
-import '../../node_modules/leaflet/dist/leaflet.js';   
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.esm.browser.min.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
