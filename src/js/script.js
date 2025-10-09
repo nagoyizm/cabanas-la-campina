@@ -918,112 +918,84 @@ selectCabanas.addEventListener('change', () => {
     }, 300);
 });
 
-const suite1=`<br> Esta suite cuenta con cama de dos plazas, pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. 
-                        <br><br>
-                        Posee vista al jardín (con opción de sillón cama extra por costo adicional y según disponibilidad).
-                        <br><br>
-                        <strong>Incluye:</strong>
-                        <br>
-                        -Ropa de cama<br>
-                        -Juego de toallas<br>
-                        -Secador de cabello<br>
-                        -Rollo de papel higiénico(x1)<br>
-                        -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br>
-                        -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.<br>
-                        -Acceso a quinchos grandes y comedores comunitarios al exterior.<br>
-                        -Estacionamiento.<br>
-                        -Acceso a juegos infantiles.<br>
-                        -Acceso a piscinas (solo verano).<br>
-                        <br><br>
-                        <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en los suites.
-                        *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+const suitesInfo = {
+    'Suite de primer piso - Superior': {
+        imagenes: [
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/1.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/2.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg'
+        ],
+        parrafo: `<br> Esta suite cuenta con cama de dos plazas, pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. <br><br> Posee vista al jardín (con opción de sillón cama extra por costo adicional y según disponibilidad). <br><br> <strong>Incluye:</strong> <br> -Ropa de cama<br> -Juego de toallas<br> -Secador de cabello<br> -Rollo de papel higiénico(x1)<br> -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br> -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.<br> -Acceso a quinchos grandes y comedores comunitarios al exterior.<br> -Estacionamiento.<br> -Acceso a juegos infantiles.<br> -Acceso a piscinas (solo verano).<br> <br> <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en los suites. *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+    },
+    'Suite de segundo piso - Deluxe': {
+        imagenes: [
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/5.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/6.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/7.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/8.jpg'
+        ],
+        parrafo: `<br>Esta suite cuentan con una cama de dos plazas, una pequeña cocinilla eléctrica para comidas menores (desayunos/onces) y un baño con ducha (con opción de sillón cama extra por costo adicional y según disponibilidad) con vista al jardín y ventilador. <br><br><strong>Incluye:</strong><br> <br>-Ropa de cama<br>-Juego de toallas<br>Secador de cabello<br>Rollo de papel higiénico(x1)<br> -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br> -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas (solo verano hasta Semana Santa). <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en las suites. No conectar artículos de alta carga eléctrica. *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+    },
+    'Suite de segundo piso - Standart': {
+        imagenes: [
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/9.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/11.jpg',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg'
+        ],
+        parrafo: `<br>Esta suite cuenta con una cama de dos plazas, una pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. Posee vista al jardín (con opción de cama inflable extra por costo adicional y según disponibilidad). Incluye: -Ropa de cama<br>-Juego de toallas<br>-Secador de cabello, <br>-Rollo de papel higiénico(x1) <br>-jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas (solo verano hasta Semana Santa). <br><br> <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en las suites. No conectar artículos de alta carga eléctrica. *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+    }
+};
 
-const suite2=`<br>Esta suite cuentan con una cama de dos plazas, una pequeña cocinilla eléctrica para comidas menores (desayunos/onces) y un baño con ducha (con opción de sillón cama extra por costo adicional y según disponibilidad) con vista al jardín y ventilador.
-<br><br><strong>Incluye:</strong><br>
-    <br>-Ropa de cama<br>-Juego de toallas<br>Secador de cabello<br>Rollo de papel higiénico(x1)<br>
-    -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br>
-    -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.
-    <br>-Acceso a quinchos grandes y comedores comunitarios al exterior.
-    <br>-Estacionamiento.
-    <br>-Acceso a juegos infantiles.
-    <br>-Acceso a piscinas (solo verano hasta Semana Santa).
+// 2. Referencias a los elementos del DOM
+const selectSuites = document.getElementById('selectSuites');
+selectSuites.value = 'Suite de primer piso - Superior';
+const tituloSuites = document.getElementById('tituloSuites');
+const parrafoSuites = document.getElementById('parrafoSuites');
+const imagenesSuiteElements = [
+    document.getElementById('imagenSuite1'),
+    document.getElementById('imagenSuite2'),
+    document.getElementById('imagenSuite3'),
+    document.getElementById('imagenSuite4')
+];
 
-<strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en las suites. No conectar artículos de alta carga eléctrica.
-*Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+// 3. Función única y reutilizable para actualizar el contenido
+function actualizarContenidoSuites() {
+    const valorSeleccionado = selectSuites.value;
+    const info = suitesInfo[valorSeleccionado];
 
-const suite3=`<br>Esta suite cuenta con una cama de dos plazas, una pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. Posee vista al jardín (con opción de cama inflable extra por costo adicional y según disponibilidad). Incluye:
-    -Ropa de cama<br>-Juego de toallas<br>-Secador de cabello,
-    <br>-Rollo de papel higiénico(x1)
-    <br>-jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).
-    <br>-Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.
-    <br>-Acceso a quinchos grandes y comedores c    omunitarios al exterior.
-    <br>-Estacionamiento.
-    <br>-Acceso a juegos infantiles.
-    <br>-Acceso a piscinas (solo verano hasta Semana Santa).
-<br><br>
-<strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en las suites. No conectar artículos de alta carga eléctrica.
-*Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
+    if (!info) {
+        console.error(`No se encontró información para la suite: ${valorSeleccionado}`);
+        return; 
+    }
 
+    const elementosParaAnimar = [tituloSuites, parrafoSuites, ...imagenesSuiteElements];
+    
+    elementosParaAnimar.forEach(el => el.classList.add('fade-out'));
 
-
-const selectSuites=document.getElementById('selectSuites')
-selectSuites.addEventListener('change',()=> {
-    const parrafoSuites = document.getElementById('parrafoSuites');
-    const titulo = document.getElementById('tituloSuites')
-    const imagenes = [
-        document.getElementById('imagenSuite1'),
-        document.getElementById('imagenSuite2'),
-        document.getElementById('imagenSuite3'),
-        document.getElementById('imagenSuite4')
-    ];
-
-    // Añadir clase de fade-out
-    titulo.classList.add('fade-out');
-    parrafoSuites.classList.add('fade-out');
-    imagenes.forEach(img => img.classList.add('fade-out'));
-
-    // Esperar a que termine la animación de desvanecimiento
     setTimeout(() => {
-        if(selectSuites.value === 'Suite de primer piso - Superior') {
-            imagenes[0].src='https://ik.imagekit.io/kirt8tkpk/img/suites/1.jpg';
-            imagenes[1].src='https://ik.imagekit.io/kirt8tkpk/img/suites/2.jpg';
-            imagenes[2].src='https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg';
-            imagenes[3].src='https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg';
-            parrafoSuites.innerHTML=suite1;
-
-            titulo.innerHTML='Suite de primer piso - Superior'
-        } else if(selectSuites.value==='Suite de segundo piso - Deluxe') {
-            imagenes[0].src='https://ik.imagekit.io/kirt8tkpk/img/suites/5.jpg';
-            imagenes[1].src='https://ik.imagekit.io/kirt8tkpk/img/suites/6.jpg';
-            imagenes[2].src='https://ik.imagekit.io/kirt8tkpk/img/suites/7.jpg';
-            imagenes[3].src='https://ik.imagekit.io/kirt8tkpk/img/suites/8.jpg';
-            titulo.innerHTML = `Suite de segundo piso - Deluxe`;
-
-            parrafoSuites.innerHTML=suite2;
-        } else if(selectSuites.value==='Suite de segundo piso - Standart') {
-            imagenes[0].src='https://ik.imagekit.io/kirt8tkpk/img/suites/9.jpg';
-            imagenes[1].src='https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg';
-            imagenes[2].src='https://ik.imagekit.io/kirt8tkpk/img/suites/11.jpg';
-            imagenes[3].src='https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg';
-            titulo.innerHTML='Suite de segundo piso - Standart';
-            parrafoSuites.innerHTML=suite3;
-        }
-
-        // Remover clase de fade-out y añadir fade-in
-        titulo.classList.remove('fade-out');
-        titulo.classList.add('fade-in');
-        parrafoSuites.classList.remove('fade-out');
-        parrafoSuites.classList.add('fade-in');
-        imagenes.forEach(img => {
-            img.classList.remove('fade-out');
-            img.classList.add('fade-in');
+        tituloSuites.textContent = valorSeleccionado;
+        parrafoSuites.innerHTML = info.parrafo;
+        imagenesSuiteElements.forEach((img, index) => {
+            if (img) img.src = info.imagenes[index];
         });
 
-        // Establecer el scroll del contenedor del párrafo al inicio
-        parrafoSuites.scrollTop = 0; // Desplazar el scroll hacia arriba
-    }, 300); // Tiempo de espera para que coincida con la duración de la animación
-});
+        elementosParaAnimar.forEach(el => {
+            el.classList.remove('fade-out');
+            el.classList.add('fade-in');
+        });
 
+        parrafoSuites.scrollTop = 0;
+    }, 300);
+}
+
+// 4. LLAMADAS A LA FUNCIÓN
+// Se ejecuta una vez al cargar la página para establecer el estado inicial correcto.
+actualizarContenidoSuites();
+
+// Se ejecuta cada vez que el usuario cambia la opción en el <select>.
+selectSuites.addEventListener('change', actualizarContenidoSuites);
 
 
 
