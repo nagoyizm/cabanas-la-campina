@@ -47,6 +47,12 @@ html{
     /* Añade opacidad de 10% al color de fondo */
   }
 
+  footer{
+    background-image: url('https://ik.imagekit.io/kirt8tkpk/img/fondoGroovy2.webp') ;
+    background-repeat:repeat;
+   
+  }
+
   #botonBanner{
     background-image: url('https://ik.imagekit.io/kirt8tkpk/img/.webp');
     background-repeat: repeat;
