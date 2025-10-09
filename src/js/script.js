@@ -886,10 +886,10 @@ selectCabanas.addEventListener('change', () => {
     // Esperar a que termine la animación de desvanecimiento
     setTimeout(() => {
         if (selectCabanas.value === 'cabaña de 5 a 7 personas') {
-            document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/1.webp';
-            document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/2.webp';
-            document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/3.webp';
-            document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/4.webp';
+            document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/5.jpg';
+            document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/6.jpg';
+            document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/7.jpg';
+            document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/8.jpg';
             parrafoCabanas.innerHTML = cabana1;
             titulo.textContent = 'Cabaña de 5 a 7 personas';
         } else {
