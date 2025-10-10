@@ -820,36 +820,32 @@ botonEnvioCabanas.addEventListener('click',(event)=>
 
 });
 
-const cabana1 = `<br>Esta cabaña cuenta con una pieza matrimonial con baño privado en el primer piso, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran tres camas de una plaza y una habitación con dos camas de una plaza. 
-<br><br>
+const cabana1 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
+<strong>Incluye:</strong>
+    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1), jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).
+    <br>-Vajilla, tetera, refrigerador, microondas, detergente lavalozas, y fósforos.
+    <br>-Televisor con DirecTV.
+    <br>-Quincho privado con comedor en terraza.
+    <br>-Estacionamiento privado.
+    <br>-Acceso a juegos infantiles.
+    <br>-Calefacción (de otoño a primavera).
+    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br><br>
+
+<strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
+
+const cabana2 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
 
-    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1),jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml)..
-    <br>-Vajilla, tetera, refrigerador y microondas, detergente lavalozas, fósforos, y sal.
+    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1), jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).
+    <br>-Vajilla, tetera, refrigerador, microondas, detergente lavalozas, y fósforos.
     <br>-Televisor con DirecTV.
-    <br>-Quincho para asados y comedor en terraza.
+    <br>-Quincho privado con comedor en terraza.
     <br>-Estacionamiento privado.
     <br>-Acceso a juegos infantiles.
-    <br>-Acceso a piscinas (solo verano hasta Semana Santa).
-    <br>-Calefacción (solo invierno).<br><br>
+    <br>-Calefacción (de otoño a primavera).
+    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br><br>
 
-<strong>IMPORTANTE: La cabaña no cuenta con Wi-Fi ni artículos de aseo e higiene personal.
-*Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables. Opción de 1 futón para persona extra con valor adicional (consultar disponibilidad al momento de reservar)</strong><br><br>`;
-
-const cabana2 = `<br>Esta cabaña cuenta con una pieza en el primer piso con cama matrimonial, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza.
-<br><br><strong>Incluye:</strong>
-    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1),jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).<br>
-    <br>-Vajilla, tetera, refrigerador y microondas, detergente lavalozas, fósforos, y sal.
-    <br>-Televisor con DirecTV.
-    <br>-Quincho para asados y comedor en terraza.
-    <br>-Estacionamiento privado.
-    <br>-Acceso a juegos infantiles.
-    <br>-Acceso a piscinas (solo verano hasta Semana Santa).
-    <br>-Calefacción (solo invierno).<br><br>
-
-<strong>IMPORTANTE: La cabaña no cuenta con Wi-Fi ni artículos de aseo e higiene personal.
-*Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables.
-Opción de 1 futón para persona extra con valor adicional (consultar disponibilidad al momento de reservar).</strong>`;
+<strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
 const selectCabanas = document.getElementById('selectCabanas');
 
