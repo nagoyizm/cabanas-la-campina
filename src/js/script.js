@@ -820,9 +820,10 @@ botonEnvioCabanas.addEventListener('click',(event)=>
 
 });
 
-const cabana1 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
+const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>) <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
-    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1), jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).
+    <br>-Ropa de cama, juego de toallas (de cuerpo x6, de mano x2, de pie x2).
+    <br>-Rollo de papel higiénico(x2), jabón líquido(2x 30ml), shampoo(2x 30ml) y acondicionador(2x 30ml).
     <br>-Vajilla, tetera, refrigerador, microondas, detergente lavalozas, y fósforos.
     <br>-Televisor con DirecTV.
     <br>-Quincho privado con comedor en terraza.
@@ -833,10 +834,11 @@ const cabana1 = `<br>En el primer piso cuenta con una pieza con cama dos plazas,
 
 <strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
-const cabana2 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
+const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
 
-    <br>-Ropa de cama, juego de toallas, rollo de papel higiénico(x1), jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).
+    <br>-Ropa de cama, juego de toallas (de cuerpo x4, de mano x1, de pie x1).
+    <br>-Rollo de papel higiénico(x1), jabón líquido(30ml), shampoo(30ml) y acondicionador(30ml).
     <br>-Vajilla, tetera, refrigerador, microondas, detergente lavalozas, y fósforos.
     <br>-Televisor con DirecTV.
     <br>-Quincho privado con comedor en terraza.
