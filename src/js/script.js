@@ -1041,20 +1041,15 @@ Bolsa 2,4kg aprox.: $5.000.-`
 const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br><br>Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisarlos cómodamente.`
 
 const parrafoAmenidades = `
-    <strong>PAPEL HIGIÉNICO ADICIONAL</strong>: Valor: $500.- por rollo <br> <br>
-    <strong>CARBÓN Bolsa 2,4kg aprox.: $5.000.-</strong><br><br>
-    ☕️ <strong>BEBIDAS CALIENTES DE MÁQUINA</strong> (cappuccino, cappuccino vainilla, té chai latte, chocolate caliente). 
-    Puede retirar en recepción o pedir que se lo lleven a su cabaña/suite. <br><strong>Vaso 200ml sabor a elección: $1.200.-</strong> <br><br>
-    🧼👕 <strong>SERVICIO DE LAVANDERÍA</strong> (incluye detergente, lavado, secado al aire libre, y doblado sin planchar. 
-    NO SE RECIBE ROPA INTERIOR). Horario para solicitar: 10:30hrs – 15:30hrs. 
-    Una vez solicitado el servicio, una bolsa de 40x30x12cm le será entregada a su cabaña para que puedan llenarla con la ropa a lavar.<br> 
-    <strong>Bolsa: $5.000.-</strong> <br><br>
-    ♟🧩 <strong>JUEGOS DE MESA</strong> (ajedrez, naipes, jenga, ludo, dominos, entre otros). 
-    <br><strong>Horario: 10:30 – 20:30hrs.</strong> <br>¡Te los prestamos por 2 horas sin costo adicional! 
-    Simplemente acércate a recepción, deja la garantía y retira el juego a elección (máx. 2). 
-    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. 
-    Luego de las 20:30hrs, se devuelve al día siguiente. 
-   <strong> Al devolverlo, debes entregarlo en las mismas condiciones 100% completo para devolución de garantía.</strong><br><br>
+    <strong>PAPEL HIGIÉNICO: $500 por rollo</strong><br> <br>
+    <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
+    ☕️ <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml</strong> <br>Puede elegir entre cappuccino, té chai latte, y chocolate caliente.
+    Retirar en recepción o pedir que se lo lleven a su cabaña/suite.<br><br>
+    🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm)</strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Horario para solicitar: 10:30hrs – 15:30hrs. 
+    Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
+    ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo adicional! Horario: 10:30 – 20:30hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción, dejar una garantía de $5.000 para retirar el juego (máx. 2 por cabaña/suite). 
+    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <br><i>Luego de las 20:30hrs, se devuelve al día siguiente</i>.
+   <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará la garantía.</strong><br><br>
 `;
 
 
@@ -1247,7 +1242,7 @@ let textoMirasol=`De arena dorada y clima agradable durante casi todo el año, e
 
 let textoAlgarroboNorte=`Se consolida como un refugio de tranquilidad y espacio abierto, ideal para quienes buscan desconectar en un entorno sereno y seguro. Con baja afluencia en verano, especialmente recomendada para evitar aglomeraciones, es perfecta para relajarse bajo el sol, caminar descalzo por su arena limpia de tonos únicos o disfrutar partidas de paletas junto a tu mascota. Sus amplias extensiones invitan a paseos solitarios que pueden extenderse hasta la cercana Playa de la Cueva del Pirata, mientras que las puestas de sol pintan el cielo con tonalidades espectaculares, un paraíso para fotógrafos y enamorados de la naturaleza. La limpieza impecable de su entorno, sumada a estacionamientos accesibles y calles bien mantenidas, complementa una experiencia que brinda calma en todas las estaciones, siendo el invierno un momento mágico para contemplar su belleza sin prisas.`
 
-let textoPlayaInternacional=`Reconocida por su costa rocosa y oleaje abierto al mar y al viento del norte, es un destino ideal para quienes buscan tranquilidad y espacios amplios sin aglomeraciones. Al no ser apta para el baño, se convierte en el lugar perfecto para relajarse en familia, disfrutar de caminatas solitarias o sentarse a contemplar el mar en completa calma. Sus atardeceres son un espectáculo natural, con cielos que se tiñen de colores vibrantes, ideal para fotógrafos o simplemente para desconectar. Cercano a la playa, un acogedor local ofrece café y kuchen, mientras que un restaurante cercano sirve platos como pescados frescos y empanadas de camarón con queso, típica   s de la zona. Con estacionamiento accesible y ambiente familiar, es una opción sencilla pero encantadora para disfrutar de la naturaleza sin prisas.`
+let textoPlayaInternacional=`Reconocida por su costa rocosa y oleaje abierto al mar y al viento del norte, es un destino ideal para quienes buscan tranquilidad y espacios amplios sin aglomeraciones. Al no ser apta para el baño, se convierte en el lugar perfecto para relajarse en familia, disfrutar de caminatas solitarias o sentarse a contemplar el mar en completa calma. Sus atardeceres son un espectáculo natural, con cielos que se tiñen de colores vibrantes, ideal para fotógrafos o simplemente para desconectar. Cercano a la playa, un acogedor local ofrece café y kuchen, mientras que un restaurante cercano sirve platos como pescados frescos y empanadas de camarón con queso, típicas de la zona. Con estacionamiento accesible y ambiente familiar, es una opción sencilla pero encantadora para disfrutar de la naturaleza sin prisas.`
 
 let textoPlayaLosTubos=`Ubicada frente a la Quebrada Las Tinajas en el sector norte de Algarrobo, es un rincón de serenidad y singularidad geológica. De superficie angosta y aguas calmas, su nombre proviene de los vestigios de un antiguo muelle construido sobre tubos de cemento, ahora cubiertos por coloridos mosaicos que añaden un toque artístico a su paisaje rocoso. Ideal para familias, sus aguas bajas y pozas naturales son seguras para que los niños exploren, mientras que los adultos pueden relajarse en su ambiente tranquilo y poco concurrido. Destaca por sus formaciones rocosas únicas, tubos sumergidos y cavernas submarinas, atrayendo a buzos y amantes del snorkel. Además, junto a la playa se encuentra una plataforma geológica con fósiles de hace 65 a 55 millones de años, un atractivo para curiosos y apasionados por la historia natural. Con estampas panorámicas que combinan mar, rocas y vestigios históricos, es un lugar perfecto para desconectar, disfrutar de caminatas o simplemente contemplar la calma del entorno`
 
