@@ -1011,9 +1011,9 @@ const instalaciones = [
 const parrafoJardin = `Nuestros jardines y senderos son un refugio de tranquilidad y belleza natural. Con una variedad de plantas y árboles autóctonos, flores vibrantes y caminos serpenteantes, son el lugar perfecto para relajarse y disfrutar de la brisa marina. El diseño incluye zonas de descanso estratégicamente ubicadas para que puedas contemplar el paisaje, leer un libro o simplemente descansar. Ideal para desconectar y reconectar con la naturaleza.
 <br><br>
 <b>Desafío</b>: ¡Encuentra e identifica nuestros jardines!
-Jardín de los duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
+<br>Jardín de los Duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
 
-const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con cómodas reposaderas, sillas y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
+const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con reposaderas, mesas, sillas, y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
 
 const parrafoQuincho = `Disfruta de un asado en nuestros quinchos equipados con parrillas, mesas, sillas y áreas de sombra. Rodeados de jardines, son perfectos para reuniones en un entorno tranquilo y acogedor.<br><br> Nuestras cabañas cuentan con su propio quincho privado, y nuestras suites con un quincho grande común. <br><br><strong>*Si estás alojando en nuestras suites, tienes acceso libre a quinchos</strong><br><br>
 🧱<strong>ARRIENDO DE QUINCHO GRANDE <br> Horario 10:30hrs – 21:30hrs
@@ -1038,7 +1038,7 @@ Joven/adulto (desde 16 años): <b>$6.000</b>
 <br>Niñ@ (hasta 15 años): <b>$4.000</b>
 <br>Mascota: <b>$2.000</b><br><br>`
 
-const parrafoJuegos = `Diversión para los pequeños en nuestra área de juegos! <br> <br> Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisarlos cómodamente.`;
+const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br> <br> Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisar a tus niños cómodamente.`;
 
 const parrafoAmenidades = `
     <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
@@ -1047,7 +1047,7 @@ const parrafoAmenidades = `
     Retirar en recepción o pedir que se lo lleven a su cabaña/suite.<br><br>
     🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</b></strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
     ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo! <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción, dejar una garantía de $5.000 para retirar el juego (máx. 2 por cabaña/suite). 
-    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:30hrs, se devuelve al día siguiente</i>.
+    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:30hrs se devuelve al día siguiente</i>.
    <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará la garantía.</strong><br><br>
    `;
 
@@ -1265,7 +1265,7 @@ let textoHumedalTunquen=`Este santuario de más de 95 hectáreas despliega un mo
 
 let textoLaCuevaDelPirata=`Esta cueva costera combina aventura y paisajes impresionantes. El trayecto hacia la cueva es un descenso de 15 a 20 minutos por escalones demarcados ofrece sectores con sombra, bancas para descansar y vistas panorámicas, aunque la subida y miradores impresionantes hacia la playa y el humedal. La playa adyacente, de arena extensa y agua templada, cautiva con su oleaje potente y rompientes fuertes, pero no es apta para bañarse por las corrientes peligrosas; si se ingresa al mar, es clave no alejarse de la orilla. Aunque no hay baños ni kioscos en la playa, un almacén cerca del sendero provee suministros básicos, y vendedores ambulantes ofrecen ocasionalmente snacks y bebidas. Un destino ideal para caminantes y amantes de la naturaleza bravía, donde la belleza salvaje convive con precauciones necesarias `
 
-let textoPueblitoLosArtesanos=`Este encantador espacio combina arte, naturaleza y cultura local en un ambiente acogedor y auténtico. Destaca por su feria de artesanías genuinas —tejidos, ropa, adornos, cuadros, productos naturales y dulces artesanales—, donde todo es hecho a mano, evitando baratijas comerciales. Aunque los puestos son limitados y faltan opciones más económicas, la calidad y originalidad de los productos justifican sus precios. El entorno se enriquece con un jardín impecable de suculentas y plantas grasas, que invita a relajarse, junto a una cafetería con café en grano de calidad y un rincón de lectura tranquilo. Por las mañanas, se venden hortalizas locales, mientras que las noches cobran vida con música en vivo (jazz bossa, cuentacuentos) que anima el ambiente, aunque se extrañan opciones de comida para prolongar la visita. Recientemente remodelado, el lugar cuenta con estacionamiento señalizado, accesibilidad familiar y atención cordial. Ideal para apoyar el comercio local, disfrutar de la calma diurna o el ritmo cultural nocturno, siempre respetando su filosofía ecoamigable: "No bote basura". Un rincón mágico que celebra lo handmade y lo autóctono, perfecto para souvenirs con alma. `
+let textoPueblitoLosArtesanos=`Este encantador espacio combina arte, naturaleza y cultura local en un ambiente acogedor y auténtico. Destaca por su feria de artesanías genuinas —tejidos, ropa, adornos, cuadros, productos naturales y dulces artesanales—, donde todo es hecho a mano, evitando baratijas comerciales. Aunque los puestos son limitados y faltan opciones más económicas, la calidad y originalidad de los productos justifican sus precios. El entorno se enriquece con un jardín impecable de suculentas y plantas grasas, que invita a relajarse, junto a una cafetería con café en grano y un rincón de lectura tranquilo. Por las mañanas, se venden hortalizas locales, mientras que las noches cobran vida con música en vivo (jazz bossa, rock, cuentacuentos, entre otros) que anima el ambiente, aunque se extrañan opciones de comida para prolongar la visita. Recientemente remodelado, el lugar cuenta con estacionamiento señalizado, accesibilidad familiar y atención cordial. Ideal para apoyar el comercio local, disfrutar de la calma diurna o el ritmo cultural nocturno, siempre respetando su filosofía ecoamigable: "No bote basura". Un rincón mágico que celebra lo handmade y lo autóctono, perfecto para souvenirs con alma. `
 
 // Crear el pop-up para la imagen
 
