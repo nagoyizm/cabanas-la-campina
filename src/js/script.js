@@ -1358,7 +1358,7 @@ if (!imagenPanorama.dataset.listenerAdded) {
     imagenPanorama.dataset.listenerAdded = true; // Marcar que el listener ha sido agregado
 }
 
-document.querySelectorAll('.botonUbicacion').forEach(boton => {
+document.querySelectorAll('.botonUbicación').forEach(boton => {
     boton.addEventListener('click', async (event) => {
         event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
         const contenidoPanoramasInicial = document.getElementById('contenidoPanoramasInicial')
@@ -1676,7 +1676,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('sidebarPanoramas'); // Usa el contenedor adecuado
 
     container.addEventListener('click', (event) => {
-        if (event.target.classList.contains('botonUbicacion')) {
+        if (event.target.classList.contains('botonUbicación')) {
             event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
         const contenidoPanoramasInicial = document.getElementById('contenidoPanoramasInicial')
         contenidoPanoramasInicial.classList.add('hidden')
