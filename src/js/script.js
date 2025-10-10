@@ -915,7 +915,7 @@ selectCabanas.addEventListener('change', () => {
 });
 
 const suitesInfo = {
-    'Suite de primer piso - Superior': {
+    'Suite Superior (1er piso)': {
         imagenes: [
             'https://ik.imagekit.io/kirt8tkpk/img/suites/1.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/2.jpg?v=2',
@@ -924,7 +924,7 @@ const suitesInfo = {
         ],
         parrafo: `<br> Esta suite cuenta con cama de dos plazas, pequeña cocinilla eléctrica para comidas menores (desayunos/onces), ducha en dormitorio frente a cama, y un baño privado. <br><br> Posee vista al jardín (con opción de sillón cama extra por costo adicional y según disponibilidad). <br><br> <strong>Incluye:</strong> <br> -Ropa de cama<br> -Juego de toallas<br> -Secador de cabello<br> -Rollo de papel higiénico(x1)<br> -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br> -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV.<br> -Acceso a quinchos grandes y comedores comunitarios al exterior.<br> -Estacionamiento.<br> -Acceso a juegos infantiles.<br> -Acceso a piscinas (solo verano).<br> <br> <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en los suites. *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
     },
-    'Suite de segundo piso - Deluxe': {
+    'Suite Deluxe (2do piso)': {
         imagenes: [
             'https://ik.imagekit.io/kirt8tkpk/img/suites/5.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/6.jpg?v=2',
@@ -933,7 +933,7 @@ const suitesInfo = {
         ],
         parrafo: `<br>Esta suite cuentan con una cama de dos plazas, una pequeña cocinilla eléctrica para comidas menores (desayunos/onces) y un baño con ducha (con opción de sillón cama extra por costo adicional y según disponibilidad) con vista al jardín y ventilador. <br><br><strong>Incluye:</strong><br> <br>-Ropa de cama<br>-Juego de toallas<br>Secador de cabello<br>Rollo de papel higiénico(x1)<br> -jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml).<br> -Vajilla, tetera, frigobar, endulzante, detergente lavalozas y televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas (solo verano hasta Semana Santa). <strong>IMPORTANTE: Las suites no cuentan con Wi-Fi ni artículos de aseo e higiene personal. Se prohíbe la música después de las 21:00. No se aceptan mascotas en las suites. No conectar artículos de alta carga eléctrica. *Puede haber 1 infante extra si puede dormir en cama matrimonial con sus responsables y/o cama inflable adicional.</strong><br><br>`
     },
-    'Suite de segundo piso - Standart': {
+    'Suite Standard (2do piso)': {
         imagenes: [
             'https://ik.imagekit.io/kirt8tkpk/img/suites/9.jpg?v=3',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg?v=3',
@@ -946,7 +946,7 @@ const suitesInfo = {
 
 // 2. Referencias a los elementos del DOM
 const selectSuites = document.getElementById('selectSuites');
-selectSuites.value = 'Suite de primer piso - Superior';
+selectSuites.value = 'Suite Superior (1er piso)';
 const tituloSuites = document.getElementById('tituloSuites');
 const parrafoSuites = document.getElementById('parrafoSuites');
 const imagenesSuiteElements = [
