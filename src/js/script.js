@@ -1041,14 +1041,14 @@ Bolsa 2,4kg aprox.: $5.000.-`
 const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br><br>Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisarlos cómodamente.`
 
 const parrafoAmenidades = `
-    <strong>PAPEL HIGIÉNICO: $500 por rollo</strong><br> <br>
+    <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
     <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
-    ☕️ <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml</strong> <br>Puede elegir entre cappuccino, té chai latte, y chocolate caliente.
+    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino, té chai latte, y chocolate caliente.
     Retirar en recepción o pedir que se lo lleven a su cabaña/suite.<br><br>
-    🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm)</strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Horario para solicitar: 10:30hrs – 15:30hrs. 
+    🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm).</strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Horario para solicitar: 10:30hrs – 15:30hrs. 
     Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
     ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo adicional! Horario: 10:30 – 20:30hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción, dejar una garantía de $5.000 para retirar el juego (máx. 2 por cabaña/suite). 
-    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <br><i>Luego de las 20:30hrs, se devuelve al día siguiente</i>.
+    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:30hrs, se devuelve al día siguiente</i>.
    <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará la garantía.</strong><br><br>
 `;
 
