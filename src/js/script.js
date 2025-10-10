@@ -830,7 +830,7 @@ const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plaz
     <br>-Estacionamiento privado.
     <br>-Acceso a juegos infantiles.
     <br>-Calefacción (de otoño a primavera).
-    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br><br>
+    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br>
 
 <strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
@@ -845,7 +845,7 @@ const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas,
     <br>-Estacionamiento privado.
     <br>-Acceso a juegos infantiles.
     <br>-Calefacción (de otoño a primavera).
-    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br><br>
+    <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>.<br>
 
 <strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
