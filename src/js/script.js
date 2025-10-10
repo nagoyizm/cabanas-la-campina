@@ -1011,7 +1011,7 @@ const instalaciones = [
 const parrafoJardin = `Nuestros jardines y senderos son un refugio de tranquilidad y belleza natural. Con una variedad de plantas y árboles autóctonos, flores vibrantes y caminos serpenteantes, son el lugar perfecto para relajarse y disfrutar de la brisa marina. El diseño incluye zonas de descanso estratégicamente ubicadas para que puedas contemplar el paisaje, leer un libro o simplemente descansar. Ideal para desconectar y reconectar con la naturaleza.
 <br><br>
 <b>Desafío</b>: ¡Encuentra e identifica nuestros jardines!
-Jardín de los duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
+<br>Jardín de los Duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
 
 const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con cómodas reposaderas, sillas y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
 
