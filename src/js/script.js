@@ -946,7 +946,7 @@ const suitesInfo = {
 
 // 2. Referencias a los elementos del DOM
 const selectSuites = document.getElementById('selectSuites');
-selectSuites.value = 'Suite Superior (1er piso)';
+selectSuites.value = 'Suite de primer piso - Superior';
 const tituloSuites = document.getElementById('tituloSuites');
 const parrafoSuites = document.getElementById('parrafoSuites');
 const imagenesSuiteElements = [
