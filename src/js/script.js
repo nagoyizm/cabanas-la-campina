@@ -1011,36 +1011,34 @@ const instalaciones = [
 const parrafoJardin = `Nuestros jardines y senderos son un refugio de tranquilidad y belleza natural. Con una variedad de plantas y árboles autóctonos, flores vibrantes y caminos serpenteantes, son el lugar perfecto para relajarse y disfrutar de la brisa marina. El diseño incluye zonas de descanso estratégicamente ubicadas para que puedas contemplar el paisaje, leer un libro o simplemente descansar. Ideal para desconectar y reconectar con la naturaleza.
 <br><br>
 <b>Desafío</b>: ¡Encuentra e identifica nuestros jardines!
-<br>Jardín de los Duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
+Jardín de los duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
 
 const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con cómodas reposaderas, sillas y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
 
 const parrafoQuincho = `Disfruta de un asado en nuestros quinchos equipados con parrillas, mesas, sillas y áreas de sombra. Rodeados de jardines, son perfectos para reuniones en un entorno tranquilo y acogedor.<br><br> Nuestras cabañas cuentan con su propio quincho privado, y nuestras suites con un quincho grande común. <br><br><strong>*Si estás alojando en nuestras suites, tienes acceso libre a quinchos</strong><br><br>
 🧱<strong>ARRIENDO DE QUINCHO GRANDE <br> Horario 10:30hrs – 21:30hrs
 (Aplican términos y condiciones de arriendo de quincho según temporadas).</strong><br><br>
-<strong>CARBÓN Bolsa 2,4kg aprox.: $5.000.-</strong><br><br>
+<strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
+
 <strong>TEMPORADA ALTA (incluye baño, estacionamiento, acceso a ducha y piscinas)<br>
-
-
 Fijo: $25.000.-<br></strong>
-Joven/adulto (desde 16 años): $8.000.- p/p.<br>
+Joven/adulto (desde 16 años): <b>$8.000</b>
+<br>Niñ@ (hasta 15 años): <b>$6.000</b>
+<br>Mascota: <b>$4.000</b><br><br>
 
-Niñ@ (hasta 15 años): $6.000.- p/p.
-Mascota: $4.000.- c/u. <br><br>
 <strong>TEMPORADA MEDIA (incluye baño y estacionamiento).<br>
 Fijo: $20.000.-</strong><br>
-Joven/adulto (desde 16 años): $7.000.- p/p.<br>
-Niñ@ (hasta 15 años): $5.000.- p/p
-Mascota: $3.000.- c/u.<br><br>
+Joven/adulto (desde 16 años): <b>$7.000</b>
+<br>Niñ@ (hasta 15 años): <b>$5.000</b>
+<br>Mascota: <b>$3.000</b><br><br>
+
 <strong>TEMPORADA BAJA (incluye baño y estacionamiento).<br>
 Fijo: $15.000.-</strong><br>
-Joven/adulto (desde 16 años): $6.000.- p/p.<br>
-Niñ@ (hasta 15 años): $4.000.- p/p
-Mascota: $2.000.- c/u.
-🪵CARBÓN
-Bolsa 2,4kg aprox.: $5.000.-`
+Joven/adulto (desde 16 años): <b>$6.000</b>
+<br>Niñ@ (hasta 15 años): <b>$4.000</b>
+<br>Mascota: <b>$2.000</b><br><br>`
 
-const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br><br>Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisarlos cómodamente.`
+const parrafoJuegos = `Diversión para los pequeños en nuestra área de juegos! <br> <br> Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisarlos cómodamente.`;
 
 const parrafoAmenidades = `
     <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
@@ -1051,7 +1049,7 @@ const parrafoAmenidades = `
     ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo! <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción, dejar una garantía de $5.000 para retirar el juego (máx. 2 por cabaña/suite). 
     Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:30hrs, se devuelve al día siguiente</i>.
    <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará la garantía.</strong><br><br>
-`;
+   `;
 
 
 
