@@ -1085,7 +1085,7 @@ function crearOverlay(div) {
                 <p class="font-antic text-sm lg:text-lg  w-full px-8 text-center ">${parrafo}</p>
             </div>
             
-            <img src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/${img}.webp" class="relative w-full h-1/2 lg:h-full lg:w-1/2 object-cover overflow-hidden">
+            <img src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/${img}.webp?v=2" class="relative w-full h-1/2 lg:h-full lg:w-1/2 object-cover overflow-hidden">
             <button id="close-overlay" style="position: absolute; top: 3px; right: 10px;">${iconoCierre}</button>
         </div>`;
 
