@@ -938,7 +938,7 @@ const suitesInfo = {
     'Standard de 1 a 2 personas': {
         imagenes: [
             'https://ik.imagekit.io/kirt8tkpk/img/suites/9.jpg?v=3',
-            'https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg?v=4',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg?v=5',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/11.jpg?v=3',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg?v=3'
         ],
