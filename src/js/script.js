@@ -832,7 +832,7 @@ const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plaz
     <br>-Calefacción (de otoño a primavera).
     <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br>
 
-<strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
+<strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de las llaves y tras la revisión del inmueble. Las cabañas no disponen de conexión Wi-Fi.</strong><br><br>`;
 
 const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
