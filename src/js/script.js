@@ -740,7 +740,7 @@ botonEnvioSuites.addEventListener('click',(event)=>
         return;
     }
 
-    let mensaje = `Hola!\nMe gustaría reservar una ${selectSuites} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${infantes} contamos con infante acompañante.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
+    let mensaje = `Hola!\nMe gustaría cotizar una ${selectSuites} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${infantes} contamos con infante acompañante.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
 
     mensaje = encodeURIComponent(mensaje);
     mandarWSP(mensaje);
@@ -804,7 +804,7 @@ botonEnvioCabanas.addEventListener('click',(event)=>
         return;
     }
 
-    let mensaje = `Hola!\nMe gustaría reservar una ${selectCabanas} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${mascotas} contamos con mascota.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
+    let mensaje = `Hola!\nMe gustaría cotizar una ${selectCabanas} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${mascotas} contamos con mascota.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
 
 
     mensaje = encodeURIComponent(mensaje);
