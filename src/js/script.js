@@ -1041,13 +1041,13 @@ Joven/adulto (desde 16 años): <b>$6.000</b>
 const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br> <br> Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisar a tus niños cómodamente.`;
 
 const parrafoAmenidades = `
-    <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
-    <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
-    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino, té chai latte, y chocolate caliente.
+    🧻 <strong>PAPEL HIGIÉNICO <br>$500 por rollo.</strong><br> <br>
+    🪵 <strong>CARBÓN <br>$5.000 por bolsa (2,4kg aprox.)</strong><br><br>
+    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA <br>$1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino, té chai latte, y chocolate caliente.
     Retirar en recepción o pedir que se lo lleven a su cabaña/suite.<br><br>
-    🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</b></strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar. <br><b>⚠️IMPORTANTE: NO SE RECIBE ROPA INTERIOR, NI ROPA CON RESIDUOS BIOLÓGICOS (excremento, orina o sangre)</b>. <br>Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
+    🧼👕 <strong>SERVICIO DE LAVANDERÍA <br>$5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</b></strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar. <br>⚠️ <b>IMPORTANTE: NO SE RECIBE ROPA INTERIOR, NI ROPA CON RESIDUOS BIOLÓGICOS (excremento, orina o sangre)</b>. <br>Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
     ♟🧩 <strong>JUEGOS DE MESA <br>Préstamo gratuito por 2 horas. <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Solo avisar por WhatsApp y acércarse a recepción. <br>Se solicitará una garantía de <b>$5.000</b> para retirar el juego (máximo 2 por cabaña/suite).
-    Si deseas seguir jugando, puedes extender el préstamo por 2 horas adicionales a través de WhatsApp y según disponibilidad. <i>Luego de las 20:30hrs se devuelve al día siguiente</i>.
+    Si deseas seguir jugando, puedes extender el préstamo por 2 horas adicionales a través de WhatsApp y según disponibilidad. <br><i>Luego de las 20:30hrs se devuelve al día siguiente</i>.
    <br><strong>Al devolverlo, debe estar completo y en buen estado para el reembolso de garantía. En caso contrario, la garantía será cobrada.</strong><br><br>
    `;
 
