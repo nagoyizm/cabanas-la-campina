@@ -740,7 +740,7 @@ botonEnvioSuites.addEventListener('click',(event)=>
         return;
     }
 
-    let mensaje = `Hola!\nMe gustaría cotizar una ${selectSuites} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${infantes} contamos con infante acompañante.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
+    let mensaje = `Hola!\nMe gustaría reservar una ${selectSuites} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${infantes} contamos con infante acompañante.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
 
     mensaje = encodeURIComponent(mensaje);
     mandarWSP(mensaje);
@@ -804,7 +804,7 @@ botonEnvioCabanas.addEventListener('click',(event)=>
         return;
     }
 
-    let mensaje = `Hola!\nMe gustaría cotizar una ${selectCabanas} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${mascotas} contamos con mascota.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
+    let mensaje = `Hola!\nMe gustaría reservar una ${selectCabanas} con check-in el ${diaCheckIn} de ${mesCheckIn} del ${anioCheckin} y check-out el ${diaCheckOut} de ${mesCheckOut} del ${anioCheckOut}.\nLa cantidad de personas es ${cantidadPersonas}.\n${mascotas} contamos con mascota.\n${adicional}`; // Corregido: espacio agregado antes de "desde"
 
 
     mensaje = encodeURIComponent(mensaje);
@@ -820,7 +820,7 @@ botonEnvioCabanas.addEventListener('click',(event)=>
 
 });
 
-const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad; incluye ropa de cama, toalla, y vajilla adicional</i>) <b>Admite mascotas</b>.<br><br>
+const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>) <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
     <br>-Ropa de cama, juego de toallas (de cuerpo x6, de mano x2, de pie x2).
     <br>-Rollo de papel higiénico(x2), jabón líquido(2x 30ml), shampoo(2x 30ml) y acondicionador(2x 30ml).
@@ -832,9 +832,9 @@ const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plaz
     <br>-Calefacción (de otoño a primavera).
     <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br>
 
-<strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de las llaves y tras la revisión del inmueble. Las cabañas no disponen de conexión Wi-Fi.</strong><br><br>`;
+<strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
-const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>>opción de futón extra por costo adicional y según disponibilidad; incluye ropa de cama, toalla, y vajilla adicional</i>). <b>Admite mascotas</b>.<br><br>
+const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
 
     <br>-Ropa de cama, juego de toallas (de cuerpo x4, de mano x1, de pie x1).
@@ -872,7 +872,8 @@ selectCabanas.addEventListener('change', () => {
         document.getElementById('imagenCabana1'),
         document.getElementById('imagenCabana2'),
         document.getElementById('imagenCabana3'),
-        document.getElementById('imagenCabana4')
+        document.getElementById('imagenCabana4'),
+        document.getElementById('imagenCabana5')
     ];
     const parrafoCabanas = document.getElementById('parrafoCabanas');
 
@@ -888,6 +889,7 @@ selectCabanas.addEventListener('change', () => {
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/6.jpg?v=2';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/7.jpg?v=2';
             document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/8.jpg?v=2';
+            document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/10.png';
             parrafoCabanas.innerHTML = cabana1;
             titulo.textContent = 'Cabaña de 5 a 7 personas';
         } else {
@@ -896,6 +898,7 @@ selectCabanas.addEventListener('change', () => {
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/2.webp';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/3.webp';
             document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/4.webp';
+            document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/9.png';
             parrafoCabanas.innerHTML = cabana2;
             titulo.textContent = 'Cabaña de 2 a 4 personas';
         }
@@ -924,7 +927,7 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg?v=2'
         ],
-        parrafo: `<br>Se encuentra en un 1er piso con vista al jardín, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, una ducha frente a la cama, y una mesita con dos sillas (<i>opción de cama inflable extra por costo adicional y según disponibilidad; incluye ropa de cama, toalla, y vajilla adicional</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
+        parrafo: `<br>Se encuentra en un 1er piso con vista al jardín, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, una ducha frente a la cama, y una mesita con dos sillas (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     },
     'Deluxe de 1 a 2 personas': {
         imagenes: [
@@ -933,7 +936,7 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/7.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/8.jpg?v=2'
         ],
-        parrafo: `<br>Se encuentra en un 2do piso con balcón y vista a la piscina, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, y una mesita con dos sillas. (<i>opción de cama inflable extra por costo adicional y según disponibilidad; incluye ropa de cama, toalla, y vajilla adicional</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV y ventilador. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
+        parrafo: `<br>Se encuentra en un 2do piso con balcón y vista a la piscina, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, y una mesita con dos sillas. (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV y ventilador. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     },
     'Standard de 1 a 2 personas': {
         imagenes: [
@@ -942,7 +945,7 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/11.jpg?v=3',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg?v=3'
         ],
-        parrafo: `<br>Se encuentra en un 2do piso con vista trasera, y cuenta con una cama de dos plazas, un baño con ducha, y una mesita con dos sillas. <b>No cuenta con cocinilla ni hervidor</b> (<i>opción de cama inflable extra por costo adicional y según disponibilidad; incluye ropa de cama, toalla, y vajilla adicional</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
+        parrafo: `<br>Se encuentra en un 2do piso con vista trasera, y cuenta con una cama de dos plazas, un baño con ducha, y una mesita con dos sillas. <b>No cuenta con cocinilla ni hervidor</b> (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     }
 };
 
@@ -1013,7 +1016,7 @@ const parrafoJardin = `Nuestros jardines y senderos son un refugio de tranquilid
 <b>Desafío</b>: ¡Encuentra e identifica nuestros jardines!
 <br>Jardín de los Duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
 
-const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con reposaderas, mesas, sillas, y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano. <br><br><b>Puedes revisar las fechas y horarios de temporada de piscinas en nuestros <i>Terminos y Condiciones</i>.</b>`
+const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con reposaderas, mesas, sillas, y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
 
 const parrafoQuincho = `Disfruta de un asado en nuestros quinchos equipados con parrillas, mesas, sillas y áreas de sombra. Rodeados de jardines, son perfectos para reuniones en un entorno tranquilo y acogedor.<br><br> Nuestras cabañas cuentan con su propio quincho privado, y nuestras suites con un quincho grande común. <br><br><strong>*Si estás alojando en nuestras suites, tienes acceso libre a quinchos</strong><br><br>
 🧱<strong>ARRIENDO DE QUINCHO GRANDE <br> Horario 10:30hrs – 21:30hrs
@@ -1041,14 +1044,14 @@ Joven/adulto (desde 16 años): <b>$6.000</b>
 const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juegos! <br> <br> Con columpios, resbalines, camas saltarinas y áreas verdes con asientos para poder supervisar a tus niños cómodamente.`;
 
 const parrafoAmenidades = `
-    🧻 <strong>PAPEL HIGIÉNICO <br>$500 por rollo.</strong><br> <br>
-    🪵 <strong>CARBÓN <br>$5.000 por bolsa (2,4kg aprox.)</strong><br><br>
-    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA <br>$1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino, té chai latte, y chocolate caliente.
+    <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
+    <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
+    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino, té chai latte, y chocolate caliente.
     Retirar en recepción o pedir que se lo lleven a su cabaña/suite.<br><br>
-    🧼👕 <strong>SERVICIO DE LAVANDERÍA <br>$5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</b></strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar. <br>⚠️ <b>IMPORTANTE: NO SE RECIBE ROPA INTERIOR, NI ROPA CON RESIDUOS BIOLÓGICOS (excremento, orina o sangre)</b>. <br>Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
-    ♟🧩 <strong>JUEGOS DE MESA <br>Préstamo gratuito por 2 horas. <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Solo avisar por WhatsApp y acércarse a recepción. <br>Se solicitará una garantía de <b>$5.000</b> para retirar el juego (máximo 2 por cabaña/suite).
-    Si deseas seguir jugando, puedes extender el préstamo por 2 horas adicionales a través de WhatsApp y según disponibilidad. <br><i>Luego de las 20:30hrs se devuelve al día siguiente</i>.
-   <br><strong>Al devolverlo, debe estar completo y en buen estado para el reembolso de garantía. En caso contrario, la garantía será cobrada.</strong><br><br>
+    🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</b></strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
+    ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo! <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción, dejar una garantía de $5.000 para retirar el juego (máx. 2 por cabaña/suite). 
+    Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:30hrs se devuelve al día siguiente</i>.
+   <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará la garantía.</strong><br><br>
    `;
 
 
