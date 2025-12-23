@@ -961,7 +961,8 @@ const imagenesSuiteElements = [
     document.getElementById('imagenSuite1'),
     document.getElementById('imagenSuite2'),
     document.getElementById('imagenSuite3'),
-    document.getElementById('imagenSuite4')
+    document.getElementById('imagenSuite4'),
+    document.getElementById('imagenSuite5')
 ];
 
 // 3. Función única y reutilizable para actualizar el contenido
