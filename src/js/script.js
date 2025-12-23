@@ -889,7 +889,7 @@ selectCabanas.addEventListener('change', () => {
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/6.jpg?v=2';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/7.jpg?v=2';
             document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/8.jpg?v=2';
-            document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/10.png';
+            document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/10.png?v=2';
             parrafoCabanas.innerHTML = cabana1;
             titulo.textContent = 'Cabaña de 5 a 7 personas';
         } else {
