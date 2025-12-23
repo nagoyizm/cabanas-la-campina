@@ -925,7 +925,8 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/1.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/2.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg?v=2',
-            'https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg?v=2'
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg?v=2',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/14.png'
         ],
         parrafo: `<br>Se encuentra en un 1er piso con vista al jardín, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, una ducha frente a la cama, y una mesita con dos sillas (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     },
@@ -934,7 +935,8 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/5.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/6.jpg?v=2',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/7.jpg?v=2',
-            'https://ik.imagekit.io/kirt8tkpk/img/suites/8.jpg?v=2'
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/8.jpg?v=2',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/13.png'
         ],
         parrafo: `<br>Se encuentra en un 2do piso con balcón y vista a la piscina, y cuenta con una cama de dos plazas, una mini cocina, un baño con ducha, y una mesita con dos sillas. (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, cocinilla eléctrica, tetera, y detergente lavalozas. <br>-Televisor con DirecTV y ventilador. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     },
@@ -943,7 +945,8 @@ const suitesInfo = {
             'https://ik.imagekit.io/kirt8tkpk/img/suites/9.jpg?v=3',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/10.jpg?v=5',
             'https://ik.imagekit.io/kirt8tkpk/img/suites/11.jpg?v=3',
-            'https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg?v=3'
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/12.jpg?v=3',
+            'https://ik.imagekit.io/kirt8tkpk/img/suites/15.png'
         ],
         parrafo: `<br>Se encuentra en un 2do piso con vista trasera, y cuenta con una cama de dos plazas, un baño con ducha, y una mesita con dos sillas. <b>No cuenta con cocinilla ni hervidor</b> (<i>opción de cama inflable extra por costo adicional y según disponibilidad</i>). <b>No admite mascotas</b>. <br><br><strong>Incluye:</strong><br>-Ropa de cama, juego de toallas (de cuerpo x2, de mano x1, de pie x1), y secador de cabello. <br>-Rollo de papel higiénico(x1), jabón líquido(20ml), shampoo/acondicionador(20ml) y crema humectante(20ml). <br>-Vajilla, frigobar, y detergente lavalozas. <br>-Televisor con DirecTV. <br>-Acceso a quinchos grandes y comedores comunitarios al exterior. <br>-Estacionamiento. <br>-Acceso a juegos infantiles. <br>-Acceso a piscinas al aire libre (10:30~20:30hrs) <b>SOLO desde diciembre hasta Semana Santa</b>. <br><br> <strong>IMPORTANTE: Se solicitará una GARANTÍA DE $20.000, la cual será reembolsada al momento de la entrega de llaves y tras la revisión del inmueble. Las suites no disponen de conexión Wi-Fi. Se prohíben los ruidos y la música a alto volumen; a partir de las 21:00 horas, se solicita mantener el silencio para favorecer el descanso de todos los huéspedes. Por seguridad, no se permite conectar aparatos de alto consumo eléctrico.</strong><br><br>`
     }
