@@ -18,6 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', { root: path.join(__dirname, '../') });
 });
 
+// Ruta para servir terminos/index.html
+app.get('/terminos', (req, res) => {
+    res.sendFile('index.html', { root: path.join(__dirname, '../terminos') });
+});
+
 // Inicia el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
