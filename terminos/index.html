@@ -24,7 +24,23 @@
     
     <link rel="stylesheet" href="/libs/leaflet.css" />
     
-    
+    <style>
+        /* Scrollbar personalizada para la tabla */
+        .table-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+        .table-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .table-scroll::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        .table-scroll::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
         
 </head>
 
@@ -108,102 +124,110 @@
 
 <div id="contenedor1" class="bg-fondoVerde z-0 mx-auto  flex flex-col overflow-hidden">
 
-<section id="bajada" class="mx-auto min-h-[100vh] w-[95%] sm:w-4/5 lg:w-3/5 mt-2 md:mt-4 flex flex-col items-center justify-start py-8 md:py-12 lg:py-16 relative">
-    <h2 id="titulo" class="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-whisper text-fondoCrema text-center px-2 mb-4 md:mb-6">Terminos y condiciones</h2>
+<section id="bajada" class="mx-auto min-h-[100vh] w-full sm:w-[95%] md:w-4/5 lg:w-3/5 mt-2 md:mt-4 flex flex-col items-center justify-start py-6 sm:py-8 md:py-12 lg:py-16 px-2 sm:px-4 relative">
+    <h2 id="titulo" class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-whisper text-fondoCrema text-center px-2 mb-3 sm:mb-4 md:mb-6">Terminos y condiciones</h2>
     
-    <div class="w-full sm:mx-4 md:mx-6 lg:mx-[50px] mb-4 md:mb-6 lg:mb-[30px] mt-2 md:mt-4">
-        <div id="parrafoTerminos" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-xs sm:text-sm md:text-base lg:text-lg font-poppins px-2 sm:px-4 md:px-6 lg:px-12 xl:px-16 py-4 md:py-6">
-            <br>
-            <b class="text-base sm:text-lg md:text-xl lg:text-2xl block text-center mb-2 md:mb-4">Términos y Condiciones por Temporada</b>
-            <br>
-            <i class="text-xs sm:text-sm md:text-base block text-center mb-4 md:mb-6"> AL RESERVAR CON NOSOTROS, ESTÁ ACEPTANDO NUESTROS TÉRMINOS Y CONDICIONES. </i>
-            <br>
+    <div class="w-full sm:mx-2 md:mx-4 lg:mx-[50px] mb-4 md:mb-6 lg:mb-[30px] mt-2 md:mt-4">
+        <div id="parrafoTerminos" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-xs sm:text-sm md:text-base lg:text-lg font-poppins px-3 sm:px-4 md:px-6 lg:px-10 xl:px-16 py-4 sm:py-5 md:py-6">
+            <div class="mb-4 sm:mb-6">
+                <b class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl block text-center mb-2 sm:mb-3 md:mb-4">Términos y Condiciones por Temporada</b>
+                <i class="text-[10px] sm:text-xs md:text-sm lg:text-base block text-center mt-2 sm:mt-3 md:mt-4"> AL RESERVAR CON NOSOTROS, ESTÁ ACEPTANDO NUESTROS TÉRMINOS Y CONDICIONES. </i>
+            </div>
 
-            <div class="overflow-x-auto border border-gray-300 rounded-lg -mx-2 sm:mx-0">
-                <table class="w-full min-w-[500px] sm:min-w-[600px] text-xs sm:text-sm md:text-base text-left border-collapse">
+            <div class="overflow-x-auto table-scroll border border-gray-300 rounded-lg mb-4 sm:mb-6" style="scrollbar-width: thin; scrollbar-color: #888 #f1f1f1;">
+                <table class="w-full min-w-[450px] sm:min-w-[550px] md:min-w-[600px] text-[10px] sm:text-xs md:text-sm lg:text-base text-left border-collapse">
                     
                     <thead class="bg-gray-300/50">
                         <tr>
-                            <th class="sticky left-0 z-10 p-2 sm:p-3 font-semibold text-gray-900 border-b border-gray-300 bg-gray-300 text-xs sm:text-sm">Característica</th>
-                            <th class="p-2 sm:p-3 font-semibold text-gray-900 border-b border-gray-300 text-xs sm:text-sm">Temporada Baja</th>
-                            <th class="p-2 sm:p-3 font-semibold text-gray-900 border-b border-gray-300 text-xs sm:text-sm">Temporada Media</th>
-                            <th class="p-2 sm:p-3 font-semibold text-gray-900 border-b border-gray-300 text-xs sm:text-sm">Temporada Alta</th>
+                            <th class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-semibold text-gray-900 border-b border-gray-300 bg-gray-300 text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Característica</th>
+                            <th class="p-1.5 sm:p-2 md:p-3 font-semibold text-gray-900 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Temporada Baja</th>
+                            <th class="p-1.5 sm:p-2 md:p-3 font-semibold text-gray-900 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Temporada Media</th>
+                            <th class="p-1.5 sm:p-2 md:p-3 font-semibold text-gray-900 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Temporada Alta</th>
                         </tr>
                     </thead>
                     
                     <tbody class="bg-white align-top">
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-xs sm:text-sm">Período</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">21 de abril al <br>2 de octubre<br> 2025 (excepto <br>festivos especiales).</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">3 de octubre al 27 de noviembre 2025.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">28 de noviembre 2025 al 5 de abril 2026, Vacaciones de Invierno y Fiestas Patrias.</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Período</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">21 de abril al <br>2 de octubre<br> 2025 (excepto <br>festivos especiales).</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">3 de octubre al 27 de noviembre 2025.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">28 de noviembre 2025 al 5 de abril 2026, Vacaciones de Invierno y Fiestas Patrias.</td>
                         </tr>
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-xs sm:text-sm">Check-in / Check-out</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Check-in:<br> 14:00 a 21:00 hrs<br>Check-out:<br> 12:30 hrs</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Check-in:<br> 14:00 a 21:00 hrs<br>Check-out:<br> 11:30 hrs</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Check-in:<br> 15:00 a 22:00 hrs<br>Check-out:<br> 10:30 hrs</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Check-in / Check-out</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Check-in:<br> 14:00 a 21:00 hrs<br>Check-out:<br> 12:30 hrs</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Check-in:<br> 14:00 a 21:00 hrs<br>Check-out:<br> 11:30 hrs</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Check-in:<br> 15:00 a 22:00 hrs<br>Check-out:<br> 10:30 hrs</td>
                         </tr>
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-xs sm:text-sm">Cancelación (100% dev.)</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>14 días</b> antes.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>20 días</b> antes.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>30 días</b> antes.</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Cancelación (100% dev.)</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>14 días</b> antes.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>20 días</b> antes.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>30 días</b> antes.</td>
                         </tr>
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-xs sm:text-sm">Cancelación (50% dev.)</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>7 días</b> antes.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>10 días</b> antes.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Mínimo <b>15 días</b> antes.</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Cancelación (50% dev.)</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>7 días</b> antes.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>10 días</b> antes.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Mínimo <b>15 días</b> antes.</td>
                         </tr>
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-xs sm:text-sm">Piscinas</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">No disponibles.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Desde Diciembre a Semana Santa.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b border-gray-300 text-xs sm:text-sm">Disponibles.</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b border-gray-300 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Piscinas</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">No disponibles.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Desde Diciembre a Semana Santa.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b border-gray-300 text-[10px] sm:text-xs md:text-sm">Disponibles.</td>
                         </tr>
                         <tr>
-                            <td class="sticky left-0 z-10 p-2 sm:p-3 font-bold text-gray-900 border-b-0 bg-white text-xs sm:text-sm">Horario Portón</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b-0 text-xs sm:text-sm">9:00 a 22:00 hrs.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b-0 text-xs sm:text-sm">9:00 a 22:00 hrs.</td>
-                            <td class="p-2 sm:p-3 text-gray-700 border-b-0 text-xs sm:text-sm">9:00 a 23:00 hrs.</td>
+                            <td class="sticky left-0 z-10 p-1.5 sm:p-2 md:p-3 font-bold text-gray-900 border-b-0 bg-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap">Horario Portón</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b-0 text-[10px] sm:text-xs md:text-sm">9:00 a 22:00 hrs.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b-0 text-[10px] sm:text-xs md:text-sm">9:00 a 22:00 hrs.</td>
+                            <td class="p-1.5 sm:p-2 md:p-3 text-gray-700 border-b-0 text-[10px] sm:text-xs md:text-sm">9:00 a 23:00 hrs.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <br><br>
         
-            <b class="text-base sm:text-lg md:text-xl lg:text-2xl block text-center mb-2 md:mb-4">Condiciones Generales (Aplicables a todas las temporadas)</b>
-            <hr class="border-0 border-t border-gray-300 my-4 md:my-6">
-            
-            <strong class="text-sm sm:text-base md:text-lg lg:text-xl block text-center mb-2 md:mb-4">RESERVAS Y GARANTÍAS</strong>
-            <p class="text-left mb-3 md:mb-4">Las reservas se confirman sólo con el abono del 50% del total de la estadía por adelantado, ya sea por transferencia, depósito o efectivo.</p>
-            <p class="text-left mb-3 md:mb-4">Durante el Check-in y antes de ingresar a su alojamiento, debe identificarse con documento de identidad (cédula o pasaporte) y pagar el saldo pendiente de la reserva.</p>
-            <p class="text-left mb-4 md:mb-6"><b>Además, deberá dejar una garantía de $20.000 por concepto de posibles daños, malas condiciones de entrega y/o extravío de llave/llavero.</b> Dicha garantía será devuelta durante el Check-out luego de revisión del inmueble en donde alojó y según condiciones de entrega.</p>
-            
-            <hr class="border-0 border-t border-gray-300 my-4 md:my-6">
-        
-            <strong class="text-sm sm:text-base md:text-lg lg:text-xl block text-center mb-2 md:mb-4">MODIFICACIONES DE FECHA Y CANCELACIONES</strong>
-            <p class="text-left mb-3 md:mb-4">Por favor, revise la tabla superior para los plazos específicos de cada temporada.</p>
-            <p class="text-left mb-3 md:mb-4"><b>Modificaciones:</b> El primer cambio de fecha no tiene costo administrativo (respetando los plazos de la tabla). Cambios adicionales tienen un costo de $10.000. Se puede convertir el abono en un voucher para usar dentro de 1 año (menos el gasto administrativo, si aplica), sujeto a disponibilidad.</p>
-            <p class="text-left mb-4 md:mb-6"><b>Cancelaciones con menos del plazo mínimo:</b> No hay devolución posible. La única alternativa será usar la reserva como originalmente fue realizada. Para modificaciones con menos del plazo mínimo, se requiere un cobro administrativo y encontrar a otra familia de reemplazo que reserve las mismas noches.</p>
-        
-            <hr class="border-0 border-t border-gray-300 my-4 md:my-6">
-        
-            <strong class="text-sm sm:text-base md:text-lg lg:text-xl block text-center mb-2 md:mb-4">NORMAS DEL RECINTO</strong>
-            <p class="text-left mb-3 md:mb-4">Posibilidad de <b>Early Check-in</b> o <b>Late Check-out</b></p>
-            <p class="text-left mb-3 md:mb-4"><b>PROHIBIDO FUMAR DENTRO DE CABAÑAS/SUITES SEGÚN LEY 20.660</b>. En caso de no cumplir con la ley, se realizará el COBRO TOTAL de la garantía para cubrir los costos de limpieza, lavado y recuperación de los interiores a un estado libre de humo.</p>
-            <p class="text-left mb-3 md:mb-4">Si necesita entrar o salir fuera del horario del portón, favor de avisar con anticipación.</p>
-            <p class="text-left mb-3 md:mb-4"><b>CABAÑAS FAMILIARES DE DESCANSO. NO se permiten ruidos o música fuerte ni parlantes exteriores.</b> Mantener música dentro de la cabaña/suite a volumen moderado a bajo. Luego de las 21:00 hrs, bajar la voz en el exterior. No se permite música en suites; dentro de cabañas solo se permite música baja para permitir el descanso de los demás pasajeros (hay mayor flexibilidad en fiestas especiales como Fiestas Patrias, Navidad y Año Nuevo).</p>
-            <p class="text-left mb-3 md:mb-4"><b>Se prohíben visitas e ingreso de personas no autorizadas a nuestro recinto privado.</b> Las instalaciones son de uso exclusivo para clientes registrados. Si desea recibir visitas, debe avisar a recepción y hacer el pago correspondiente por persona según disponibilidad.</p>
-            <p class="text-left mb-3 md:mb-4">Al final de la estadía, deben dejar la <b>vajilla lavada y guardada</b>, y dejar la basura en bolsas en sus basureros y sin líquidos.</p>
-            <p class="text-left mb-3 md:mb-4"><b>Se permiten mascotas pequeñas y medianas sólo en cabañas pagando la tarifa adicional.</b> Deben llevar correa, su propia cama y preocuparse de sus desechos. Las mascotas deben estar supervisadas por sus dueños en todo momento y <b>NO pueden ingresar al área de piscinas.</b></p>
-            <p class="text-left mb-3 md:mb-4"><b>Servicio de Housekeeping/Limpieza no está incluido.</b> Durante su estadía, el aseo y orden son de responsabilidad de los pasajeros. Deben mantener la limpieza alrededor de su cabaña y en áreas comunes. A los 5 días pueden pedir recambio de toallas y sábanas.</p>
-            <p class="text-left mb-4 md:mb-6">Saldos pendientes o vouchers tienen una vigencia máxima de 1 año (6 meses en temporada alta) y solo si se aprueban por administración.</p>
-            
-            <hr class="border-0 border-t border-gray-300 my-4 md:my-6">
-        
-            <p class="text-left mb-4 md:mb-6">Cabañas La Campiña se reserva el derecho de ingreso y de intervenir en conflictos, problemas de convivencia o actos que atenten contra la seguridad y bienestar tanto de pasajeros como del staff, y dar término inmediato a la estadía de cualquier persona que no se adhiera a estos términos y condiciones.</p>
+            <div class="mt-6 sm:mt-8 md:mt-10">
+                <b class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl block text-center mb-3 sm:mb-4 md:mb-5">Condiciones Generales (Aplicables a todas las temporadas)</b>
+                <hr class="border-0 border-t border-gray-300 my-4 sm:my-5 md:my-6">
+                
+                <div class="text-left space-y-3 sm:space-y-4 md:space-y-5">
+                    <div>
+                        <strong class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl block text-center mb-3 sm:mb-4">RESERVAS Y GARANTÍAS</strong>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Las reservas se confirman sólo con el abono del 50% del total de la estadía por adelantado, ya sea por transferencia, depósito o efectivo.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Durante el Check-in y antes de ingresar a su alojamiento, debe identificarse con documento de identidad (cédula o pasaporte) y pagar el saldo pendiente de la reserva.</p>
+                        <p class="mb-4 sm:mb-5 md:mb-6 leading-relaxed"><b>Además, deberá dejar una garantía de $20.000 por concepto de posibles daños, malas condiciones de entrega y/o extravío de llave/llavero.</b> Dicha garantía será devuelta durante el Check-out luego de revisión del inmueble en donde alojó y según condiciones de entrega.</p>
+                    </div>
+                    
+                    <hr class="border-0 border-t border-gray-300 my-4 sm:my-5 md:my-6">
+                
+                    <div>
+                        <strong class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl block text-center mb-3 sm:mb-4">MODIFICACIONES DE FECHA Y CANCELACIONES</strong>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Por favor, revise la tabla superior para los plazos específicos de cada temporada.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>Modificaciones:</b> El primer cambio de fecha no tiene costo administrativo (respetando los plazos de la tabla). Cambios adicionales tienen un costo de $10.000. Se puede convertir el abono en un voucher para usar dentro de 1 año (menos el gasto administrativo, si aplica), sujeto a disponibilidad.</p>
+                        <p class="mb-4 sm:mb-5 md:mb-6 leading-relaxed"><b>Cancelaciones con menos del plazo mínimo:</b> No hay devolución posible. La única alternativa será usar la reserva como originalmente fue realizada. Para modificaciones con menos del plazo mínimo, se requiere un cobro administrativo y encontrar a otra familia de reemplazo que reserve las mismas noches.</p>
+                    </div>
+                
+                    <hr class="border-0 border-t border-gray-300 my-4 sm:my-5 md:my-6">
+                
+                    <div>
+                        <strong class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl block text-center mb-3 sm:mb-4">NORMAS DEL RECINTO</strong>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Posibilidad de <b>Early Check-in</b> o <b>Late Check-out</b></p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>PROHIBIDO FUMAR DENTRO DE CABAÑAS/SUITES SEGÚN LEY 20.660</b>. En caso de no cumplir con la ley, se realizará el COBRO TOTAL de la garantía para cubrir los costos de limpieza, lavado y recuperación de los interiores a un estado libre de humo.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Si necesita entrar o salir fuera del horario del portón, favor de avisar con anticipación.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>CABAÑAS FAMILIARES DE DESCANSO. NO se permiten ruidos o música fuerte ni parlantes exteriores.</b> Mantener música dentro de la cabaña/suite a volumen moderado a bajo. Luego de las 21:00 hrs, bajar la voz en el exterior. No se permite música en suites; dentro de cabañas solo se permite música baja para permitir el descanso de los demás pasajeros (hay mayor flexibilidad en fiestas especiales como Fiestas Patrias, Navidad y Año Nuevo).</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>Se prohíben visitas e ingreso de personas no autorizadas a nuestro recinto privado.</b> Las instalaciones son de uso exclusivo para clientes registrados. Si desea recibir visitas, debe avisar a recepción y hacer el pago correspondiente por persona según disponibilidad.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed">Al final de la estadía, deben dejar la <b>vajilla lavada y guardada</b>, y dejar la basura en bolsas en sus basureros y sin líquidos.</p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>Se permiten mascotas pequeñas y medianas sólo en cabañas pagando la tarifa adicional.</b> Deben llevar correa, su propia cama y preocuparse de sus desechos. Las mascotas deben estar supervisadas por sus dueños en todo momento y <b>NO pueden ingresar al área de piscinas.</b></p>
+                        <p class="mb-2 sm:mb-3 md:mb-4 leading-relaxed"><b>Servicio de Housekeeping/Limpieza no está incluido.</b> Durante su estadía, el aseo y orden son de responsabilidad de los pasajeros. Deben mantener la limpieza alrededor de su cabaña y en áreas comunes. A los 5 días pueden pedir recambio de toallas y sábanas.</p>
+                        <p class="mb-4 sm:mb-5 md:mb-6 leading-relaxed">Saldos pendientes o vouchers tienen una vigencia máxima de 1 año (6 meses en temporada alta) y solo si se aprueban por administración.</p>
+                    </div>
+                    
+                    <hr class="border-0 border-t border-gray-300 my-4 sm:my-5 md:my-6">
+                
+                    <p class="mb-4 sm:mb-5 md:mb-6 leading-relaxed">Cabañas La Campiña se reserva el derecho de ingreso y de intervenir en conflictos, problemas de convivencia o actos que atenten contra la seguridad y bienestar tanto de pasajeros como del staff, y dar término inmediato a la estadía de cualquier persona que no se adhiera a estos términos y condiciones.</p>
+                </div>
+            </div>
         </div>
     </div>
     </div>
