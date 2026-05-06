@@ -1027,7 +1027,7 @@ const parrafoQuincho = `Disfruta de un asado en nuestros quinchos equipados con 
 (Aplican términos y condiciones de arriendo de quincho según temporadas).</strong><br><br>
 <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
 
-<strong>TEMPORADA ALTA (incluye baño, estacionamiento, acceso a ducha y piscinas)<br>
+<strong>TEMPORADA ALTA (incluye baño, estacionamiento, acceso a ducha, y piscinas [desde diciembre hasta Semana Santa])<br>
 Fijo: $25.000.-<br></strong>
 Joven/adulto (desde 16 años): <b>$8.000</b>
 <br>Niñ@ (hasta 15 años): <b>$6.000</b>
