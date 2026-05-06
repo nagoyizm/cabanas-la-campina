@@ -1020,7 +1020,7 @@ const parrafoJardin = `Nuestros jardines y senderos son un refugio de tranquilid
 <b>Desafío</b>: ¡Encuentra e identifica nuestros jardines!
 <br>Jardín de los Duendecitos, Jardín Puente Rojo, Jardín de la Virgen, Jardín de los Pinos, Jardín de las Zarzamoras.`;
 
-const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con reposaderas, mesas, sillas, y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
+const parrafoPiscina = `Disfruta de nuestras dos piscinas al aire libre de <b>diciembre hasta Semana Santa</b>: una piscina pequeña para niños, y una piscina más grande para jóvenes y adultos. <br><br>Rodeadas de vegetación, con reposaderas, mesas, sillas, y zonas de sombra, ofreciendo el lugar perfecto para disfrutar en familia en verano.`
 
 const parrafoQuincho = `Disfruta de un asado en nuestros quinchos equipados con parrillas, mesas, sillas y áreas de sombra. Rodeados de jardines, son perfectos para reuniones en un entorno tranquilo y acogedor.<br><br> Nuestras cabañas cuentan con su propio quincho privado, y nuestras suites con un quincho grande común. <br><br><strong>*Si estás alojando en nuestras suites, tienes acceso libre a quinchos</strong><br><br>
 🧱<strong>ARRIENDO DE QUINCHO GRANDE <br> Horario 10:30hrs – 21:30hrs
