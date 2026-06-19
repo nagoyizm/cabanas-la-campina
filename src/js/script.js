@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         case "Cabañas 5 a 7 personas":
                             nombreHref = "cabanas";
                             document.getElementById('selectCabanas').value = 'cabaña de 5 a 7 personas';
-                            document.getElementById('tituloCabanas').textContent = 'Cabañas de 5 a 7 personas';
+                            document.getElementById('tituloCabanas').textContent = 'Cabañas de 5 a 8 personas';
                             break;
                         case "Jardines y senderos":
                         case "Piscina":
