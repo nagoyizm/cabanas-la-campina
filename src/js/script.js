@@ -1033,12 +1033,6 @@ Joven/adulto (desde 16 años): <b>$8.000</b>
 <br>Niñ@ (hasta 15 años): <b>$6.000</b>
 <br>Mascota: <b>$4.000</b><br><br>
 
-<strong>TEMPORADA MEDIA (incluye baño y estacionamiento).<br>
-Fijo: $20.000.-</strong><br>
-Joven/adulto (desde 16 años): <b>$7.000</b>
-<br>Niñ@ (hasta 15 años): <b>$5.000</b>
-<br>Mascota: <b>$3.000</b><br><br>
-
 <strong>TEMPORADA BAJA (incluye baño y estacionamiento).<br>
 Fijo: $15.000.-</strong><br>
 Joven/adulto (desde 16 años): <b>$6.000</b>
