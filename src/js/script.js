@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         case "Cabañas 2 a 4 personas":
                             nombreHref = "cabanas";
                             document.getElementById('selectCabanas').value = 'cabaña de 2 a 4 personas';
-                            document.getElementById('tituloCabanas').textContent = 'Cabaña de 2 a 4 personas';
+                            document.getElementById('tituloCabanas').textContent = 'Cabaña de 2 a 5 personas';
                             break;
                         case "Suites": nombreHref = "suites"; break;
                         case "Cabañas 5 a 7 personas":
@@ -726,17 +726,17 @@ botonEnvioSuites.addEventListener('click',(event)=>
     }
 
     if (cantidadPersonas === "0" || cantidadPersonas < 1) { // Verifica si es 0 o negativo
-        alert("Tiene que especificar un número de personas."); // Alerta si el valor es 0 o negativo
+        alert("Debe especificar un número de personas."); // Alerta si el valor es 0 o negativo
         return; // Salir de la función si la validación falla
     }
 
     if (infantes !== "Sí" && infantes !== "No") {
-        alert("Tiene que especificar si viene con infantes");
+        alert("Debe especificar si viene con infantes");
         return; // Salir de la función si la validación falla
     }
     
     if(!checkboxSuite.checked){
-        alert("Tiene que indicar que leyó todo lo que incluye la cabaña");
+        alert("Debe indicar que leyó todo lo que incluye la cabaña");
         return;
     }
 
@@ -790,17 +790,17 @@ botonEnvioCabanas.addEventListener('click',(event)=>
     }
 
     if (cantidadPersonas === "0" || cantidadPersonas < 1) { // Verifica si es 0 o negativo
-        alert("Tiene que especificar un número de personas."); // Alerta si el valor es 0 o negativo
+        alert("Debe especificar un número de personas."); // Alerta si el valor es 0 o negativo
         return; // Salir de la función si la validación falla
     }
 
     if (mascotas !== "Si" && mascotas !== "No") {
-        alert("Tiene que especificar si viene con mascotas");
+        alert("Debe especificar si viene con mascotas");
         return; // Salir de la función si la validación falla
     }
     
     if(!checkboxCabana.checked){
-        alert("Tiene que indicar que leyó todo lo que incluye la cabaña");
+        alert("Debe indicar que leyó todo lo que incluye la cabaña");
         return;
     }
 
@@ -891,7 +891,7 @@ selectCabanas.addEventListener('change', () => {
             document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/8.jpg?v=2';
             document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/10.png?v=2';
             parrafoCabanas.innerHTML = cabana1;
-            titulo.textContent = 'Cabaña de 5 a 7 personas';
+            titulo.textContent = 'Cabaña de 5 a 8 personas';
         } else {
             // Corregí un pequeño error en tu URL (tenía doble //)
             document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/1.webp';
@@ -900,7 +900,7 @@ selectCabanas.addEventListener('change', () => {
             document.getElementById('imagenCabana4').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/4.webp';
             document.getElementById('imagenCabana5').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/9.png';
             parrafoCabanas.innerHTML = cabana2;
-            titulo.textContent = 'Cabaña de 2 a 4 personas';
+            titulo.textContent = 'Cabaña de 2 a 5 personas';
         }
 
         // Remover clase de fade-out y añadir fade-in
