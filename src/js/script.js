@@ -854,7 +854,7 @@ const selectCabanas = document.getElementById('selectCabanas');
 // --- INICIO: CÓDIGO AÑADIDO PARA EL ESTADO INICIAL ---
 
 // 1. Establecer el título por defecto.
-document.getElementById('tituloCabanas').textContent = 'Cabaña de 2 a 4 personas';
+document.getElementById('tituloCabanas').textContent = 'Cabaña de 2 a 5 personas';
 
 // 2. Establecer el párrafo de descripción por defecto.
 document.getElementById('parrafoCabanas').innerHTML = cabana2;
