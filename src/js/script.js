@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     //cambia el nombre de la instancia por el id de la area
                     let nombreInstancias = "";
                     switch(foundArea.id){
-                        case 1: nombreInstancias = "Cabañas 2 a 4 personas"; imgRecintos.forEach(img => ocultarImagen(img));
+                        case 1: nombreInstancias = "Cabañas 2 a 5 personas"; imgRecintos.forEach(img => ocultarImagen(img));
                         mostrarImagen(imgRecintos[0]);break;
                         case 2: nombreInstancias = "Recepcion"; imgRecintos.forEach(img => ocultarImagen(img));
                         mostrarImagen(imgRecintos[1]);break;
@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         mostrarImagen(imgRecintos[2]);break;
                         case 4: nombreInstancias = "Suites"; imgRecintos.forEach(img => ocultarImagen(img));
                         mostrarImagen(imgRecintos[3]);break;
-                        case 5: nombreInstancias = "Cabañas 5 a 7 personas"; imgRecintos.forEach(img => ocultarImagen(img));
+                        case 5: nombreInstancias = "Cabañas 5 a 8 personas"; imgRecintos.forEach(img => ocultarImagen(img));
                         mostrarImagen(imgRecintos[4]);break;
                         case 6: nombreInstancias = "Piscina"; imgRecintos.forEach(img => ocultarImagen(img));
                         mostrarImagen(imgRecintos[5]);break;
@@ -552,15 +552,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     //cambia el nombre de la href por el id de la area
                     let nombreHref = "";
                     switch (nombreInstancias) {
-                        case "Cabañas 2 a 4 personas":
+                        case "Cabañas 2 a 5 personas":
                             nombreHref = "cabanas";
-                            document.getElementById('selectCabanas').value = 'cabaña de 2 a 4 personas';
+                            document.getElementById('selectCabanas').value = 'cabaña de 2 a 5 personas';
                             document.getElementById('tituloCabanas').textContent = 'Cabaña de 2 a 5 personas';
                             break;
                         case "Suites": nombreHref = "suites"; break;
-                        case "Cabañas 5 a 7 personas":
+                        case "Cabañas 5 a 8 personas":
                             nombreHref = "cabanas";
-                            document.getElementById('selectCabanas').value = 'cabaña de 5 a 7 personas';
+                            document.getElementById('selectCabanas').value = 'cabaña de 5 a 8 personas';
                             document.getElementById('tituloCabanas').textContent = 'Cabañas de 5 a 8 personas';
                             break;
                         case "Jardines y senderos":
@@ -820,7 +820,7 @@ botonEnvioCabanas.addEventListener('click',(event)=>
 
 });
 
-const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>) <b>Admite mascotas</b>.<br><br>
+const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plazas con baño en suite, living-comedor con cocina y baño independiente. En el segundo piso hay una habitación abierta y otra cerrada. En la abierta hay tres camas de una plaza, y en la cerrada hay dos camas de una plaza (<i>opción de sofá cama según disponibilidad</i>) <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
     <br>-Ropa de cama, juego de toallas (de cuerpo x6, de mano x2, de pie x2).
     <br>-Rollo de papel higiénico(x2), jabón líquido(2x 30ml), shampoo(2x 30ml) y acondicionador(2x 30ml).
@@ -834,7 +834,7 @@ const cabana1 = `<br>En el primer piso cuenta con una pieza con cama de dos plaz
 
 <strong>IMPORTANTE: Se deja GARANTÍA DE 20mil con devolución contra entrega de llaves y revisión del inmueble. La cabaña no cuenta con Wi-Fi.</strong><br><br>`;
 
-const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de futón extra por costo adicional y según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
+const cabana2 = `<br>En el primer piso cuenta con una pieza con cama dos plazas, living-comedor con cocina y baño independiente. En el segundo piso abierto, se encuentran dos camas de una plaza (<i>opción de sofá cama según disponibilidad</i>). <b>Admite mascotas</b>.<br><br>
 <strong>Incluye:</strong>
 
     <br>-Ropa de cama, juego de toallas (de cuerpo x4, de mano x1, de pie x1).
@@ -861,7 +861,7 @@ document.getElementById('parrafoCabanas').innerHTML = cabana2;
 
 // 3. (Opcional) Asegurarse de que el <select> muestre la opción correcta.
 //    Esto es útil si tienes más de dos opciones.
-selectCabanas.value = 'cabaña de 2 a 4 personas'; 
+selectCabanas.value = 'cabaña de 2 a 5 personas'; 
 
 // --- FIN: CÓDIGO AÑADIDO ---
 
@@ -884,7 +884,7 @@ selectCabanas.addEventListener('change', () => {
 
     // Esperar a que termine la animación de desvanecimiento
     setTimeout(() => {
-        if (selectCabanas.value === 'cabaña de 5 a 7 personas') {
+        if (selectCabanas.value === 'cabaña de 5 a 8 personas') {
             document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/5.jpg?v=2';
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/6.jpg?v=2';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/7.jpg?v=2';
