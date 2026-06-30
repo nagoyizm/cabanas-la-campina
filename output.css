@@ -1305,6 +1305,10 @@ input:checked + .toggle-bg {
   margin-left: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .ms-auto {
   margin-inline-start: auto;
 }
@@ -2164,6 +2168,11 @@ input:checked + .toggle-bg {
 .py-0 {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-16 {
@@ -3238,8 +3247,16 @@ ul {
     margin-inline-start: 0.75rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-1\/2 {
