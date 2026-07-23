@@ -954,7 +954,7 @@ const suitesInfo = {
 
 // 2. Referencias a los elementos del DOM
 const selectSuites = document.getElementById('selectSuites');
-selectSuites.value = 'Superior de 1 a 2 personas';
+selectSuites.value = 'Jardín de 1 a 2 personas';
 const tituloSuites = document.getElementById('tituloSuites');
 const parrafoSuites = document.getElementById('parrafoSuites');
 const imagenesSuiteElements = [
