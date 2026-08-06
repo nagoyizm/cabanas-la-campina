@@ -1050,7 +1050,7 @@ const parrafoAmenidades = `
     🧹 <strong>SERVICIO DE LIMPIEZA: $10.000. <br>Horario de servicio: 10:30hrs – 15:30hrs.</strong> <br>Incluye barrido general interior y terraza, orden de cama, aseo de baños con recambio de toallas y reposición de papel higiénico y amenidades. (<b>No se lava loza</b>).<br><br>
     ♟🧩 <strong>JUEGOS DE MESA: !Te los prestamos por 2 horas sin costo! <br>Horario de servicio: 11:00 – 20:00hrs</strong> <br>Simplemente avisar por WhatsApp y acércarse a recepción para retirar el juego (máx. 2 por cabaña/suite). 
     Al pasar las 2 horas, puedes consultar por WhatsApp para seguir usándolo por 2 horas adicionales según disponibilidad. <i>Luego de las 20:00hrs se devuelve al día siguiente</i>.
-   <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo para la devolución de garantía, de lo contrario, se cobrará parte de la garantía.</strong><br><br>
+   <br><strong>Al devolverlo, debes entregarlo en las mismas condiciones y completo, de lo contrario, se cobrará parte de la garantía.</strong><br><br>
    `;
 
 
