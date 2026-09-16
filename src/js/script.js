@@ -165,50 +165,47 @@ document.querySelectorAll('.togglePanoramas').forEach(toggle => {
                     }
                 });
             }
-        } else {
-            // Large screen functionality (unchanged)
-            if (!wasActive) {
-                // Fase de apertura
-                currentItem.classList.add('active-item');
-                
-                // 1. Ocultar otros elementos
-                items.forEach(item => {
-                    if (item !== currentItem) {
-                        item.style.transform = 'translateX(-100%)';
-                        item.style.opacity = '0';
-                    }
-                });
+        } else if (!wasActive) {
+            // Large screen functionality: Fase de apertura
+            currentItem.classList.add('active-item');
+            
+            // 1. Ocultar otros elementos
+            items.forEach(item => {
+                if (item !== currentItem) {
+                    item.style.transform = 'translateX(-100%)';
+                    item.style.opacity = '0';
+                }
+            });
 
-                // 2. Mover elemento al tope
-                ul.prepend(currentItem);
+            // 2. Mover elemento al tope
+            ul.prepend(currentItem);
+            
+            // 3. Abrir dropdown después de 200ms
+            setTimeout(() => {
+                dropdown.style.maxHeight = `${dropdown.scrollHeight}px`;
+                dropdown.style.opacity = '1';
+            }, 200);
+            
+        } else {
+            // Fase de cierre
+            // 1. Cerrar dropdown inmediatamente
+            dropdown.style.maxHeight = '0';
+            dropdown.style.opacity = '0';
+            
+            // 2. Esperar 100ms y mover elemento a posición original
+            setTimeout(() => {
+                currentItem.classList.remove('active-item');
+                const targetPosition = items[originalIndexes.get(currentItem)];
+                ul.insertBefore(currentItem, targetPosition.nextSibling);
                 
-                // 3. Abrir dropdown después de 200ms
+                // 3. Restaurar otros elementos después de 200ms
                 setTimeout(() => {
-                    dropdown.style.maxHeight = `${dropdown.scrollHeight}px`;
-                    dropdown.style.opacity = '1';
+                    items.forEach(item => {
+                        item.style.transform = 'translateX(0)';
+                        item.style.opacity = '1';
+                    });
                 }, 200);
-                
-            } else {
-                // Fase de cierre
-                // 1. Cerrar dropdown inmediatamente
-                dropdown.style.maxHeight = '0';
-                dropdown.style.opacity = '0';
-                
-                // 2. Esperar 100ms y mover elemento a posición original
-                setTimeout(() => {
-                    currentItem.classList.remove('active-item');
-                    const targetPosition = items[originalIndexes.get(currentItem)];
-                    ul.insertBefore(currentItem, targetPosition.nextSibling);
-                    
-                    // 3. Restaurar otros elementos después de 200ms
-                    setTimeout(() => {
-                        items.forEach(item => {
-                            item.style.transform = 'translateX(0)';
-                            item.style.opacity = '1';
-                        });
-                    }, 200);
-                }, 100);
-            }
+            }, 100);
         }
 
         // Resetear estado
@@ -369,14 +366,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (timeElapsed < duration) requestAnimationFrame(animation); // Continúa la animación
             }
 
-            function easeInOutCubic(t) {
-                return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; // Nueva función de easing
-            }
-
             requestAnimationFrame(animation); // Inicia la animación
         });
     });
 });
+
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; // Nueva función de easing
+}
 
 
 
@@ -389,7 +386,8 @@ function isPointInside(area, px, py) {
 }
 
 class Area {
-    constructor(id, x1, y1, x2, y2, x3, y3, x4, y4) {
+    constructor(id, ...coords) {
+        const [x1, y1, x2, y2, x3, y3, x4, y4] = coords;
         this.id = id;
         this.coordinates = { x1, y1, x2, y2, x3, y3, x4, y4 };
         this.bounds = {
@@ -490,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-//todo lo que ocurre al hacer click en la imagen de recinto
+// Acciones al hacer click en la imagen de recinto
     imgRecintoActual.addEventListener("click", (event) => {
 
             //obtener las coordenadas del click
@@ -660,11 +658,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('logoWsp').addEventListener('mouseover', () => {
     const duda = document.getElementById('duda');
     
-    duda.classList.remove('hidden'); // Asegúrate de que el elemento sea visible
-    duda.classList.remove('fade-out'); // Remueve la clase de fade-out
-    duda.classList.add('fade-in'); // Agrega la clase de fade-in
-    duda.classList.add('flex');
-
+    duda.classList.remove('hidden', 'fade-out'); // Asegúrate de que el elemento sea visible y remueve fade-out
+    duda.classList.add('fade-in', 'flex'); // Agrega fade-in y flex
 });
 
 document.getElementById('logoWsp').addEventListener('mouseout', () => {
@@ -687,16 +682,16 @@ document.getElementById('logoWsp').addEventListener('mouseout', () => {
 
 
 
+function mandarWSP(mensaje) {
+    const url = `https://wa.me/56979004253?text=${mensaje}`; // El enlace que deseas abrir
+    window.open(url, '_blank'); // Abre el enlace en una nueva ventana o pestaña
+}
+
 //funcion para modal para mandar arriendo
 const botonEnvioSuites=document.getElementById('botonEnvioSuites');
 // Temporariamente desactivar la funcionalidad del botón
 botonEnvioSuites.addEventListener('click',(event)=>  
 {   
-
-    function mandarWSP(mensaje) {
-        const url = `https://wa.me/56979004253?text=${mensaje}`; // El enlace que deseas abrir
-        window.open(url, '_blank'); // Abre el enlace en una nueva ventana o pestaña
-    }
     event.preventDefault();
    
     let adicional = document.getElementById('adicional').value || ''; // Guardar como texto vacío si no hay contenido
@@ -758,11 +753,6 @@ botonEnvioSuites.addEventListener('click',(event)=>
 const botonEnvioCabanas=document.getElementById('botonEnvioCabanas');
 botonEnvioCabanas.addEventListener('click',(event)=> 
 {   event.preventDefault();
-
-    function mandarWSP(mensaje) {
-        const url = `https://wa.me/56979004253?text=${mensaje}`; // El enlace que deseas abrir
-        window.open(url, '_blank'); // Abre el enlace en una nueva ventana o pestaña
-    }
     
     let adicional = document.getElementById('adicionalC').value || ''; // Guardar como texto vacío si no hay contenido
     const fechaInicio = new Date(document.getElementById('fechaInicioC').value); // Obtener el valor del input
@@ -1105,7 +1095,7 @@ function crearOverlay(div) {
 
         // Esperar a que termine la transición antes de eliminar el overlay
         setTimeout(() => {
-            contenedorInstalaciones.removeChild(overlay); // Eliminar el overlay del DOM
+            overlay.remove(); // Eliminar el overlay del DOM
         }, 500); // Debe coincidir con la duración de la transición
     });
 }
@@ -1136,8 +1126,7 @@ botonCabanas.addEventListener('click',()=> {
     // Esperar un breve momento para permitir que la clase 'hidden' se elimine antes de cambiar la opacidad
     setTimeout(() => {
         modal.classList.remove('opacity-0');
-        modal.classList.add('opacity-100');
-        modal.classList.add('flex')
+        modal.classList.add('opacity-100', 'flex');
     }, 10); // 10 ms de retraso para permitir la transición
 })
 
@@ -1167,8 +1156,7 @@ botonsuites.addEventListener('click',()=> {
     // Esperar un breve momento para permitir que la clase 'hidden' se elimine antes de cambiar la opacidad
     setTimeout(() => {
         modal.classList.remove('opacity-0');
-        modal.classList.add('opacity-100');
-        modal.classList.add('flex')
+        modal.classList.add('opacity-100', 'flex');
     }, 10); // 10 ms de retraso para permitir la transición
 })
 
@@ -1317,7 +1305,9 @@ if (!imagenPanorama.dataset.listenerAdded) {
                 document.body.appendChild(popupImagen);
                 
                 // Variables para el índice de la imagen
-                let currentIndex = parseInt(imgSrc.match(/(\d+)\.jpg/)[1]); // Extraer el índice actual de la imagen
+                const filename = imgSrc.split('/').pop() || '';
+                const match = filename.match(/^(\d+)/);
+                let currentIndex = Number.parseInt(match ? match[1] : '1', 10); // Extraer el índice actual de la imagen
                 const baseImgSrc = imgSrc.substring(0, imgSrc.lastIndexOf('/') + 1); // Obtener la parte base de la ruta de la imagen
 
                 const updatePopupContent = () => {
@@ -1580,7 +1570,7 @@ const obtenerTiempoViaje = async (inicio, final, modo) => {
         const data = await response.json();
         
         // Verificar si hay características en la respuesta
-        if (data && data.features && data.features.length > 0) {
+        if (data?.features?.length > 0) {
             const duration = data.features[0].properties.summary.duration; // Acceder a duration
             return Math.ceil(duration / 60); // Retornar el tiempo en minutos sin decimales, redondeando hacia arriba
         } else {
@@ -1621,8 +1611,7 @@ function mostrarNavbar() {
 
     // Verifica si la sección 'carrusel' está completamente fuera de la ventana
     if (rect.bottom < 0) { // Cambiado para verificar si está fuera
-        navbar.classList.remove('hidden'); // Mostrar la navbar
-        navbar.classList.remove('opacity-0'); // Hacerla visible
+        navbar.classList.remove('hidden', 'opacity-0'); // Mostrar la navbar
         navbar.classList.add('flex', 'opacity-100'); // Asegúrate de que sea visible
     } else {
         navbar.classList.remove('opacity-100'); // Ocultar con animación

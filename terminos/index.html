@@ -17,7 +17,7 @@
     <!--swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!--Aos--> 
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Favicon-->
     <link rel="icon" href="../favicon.png" type="image/x-icon">
     <!--Leaflet--> 
@@ -44,22 +44,21 @@
         
 </head>
 
-<body class="w-full max-width-100vw m-0 p-0 ">
-    <div class="absolute flex flex-row gap-2 top-2 right-2 md:top-4 md:right-4 z-50">
-        <div class="flex border-2 border-white p-1 justify-center items-center" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+<body class="w-full max-width-100vw m-0 p-0 ">    <div class="absolute flex flex-row gap-2 top-2 right-2 md:top-4 md:right-4 z-50">
+        <button type="button" class="flex border-2 border-white p-1 justify-center items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
             <svg class="w-4 h-4 md:w-5 md:h-5 text-white align-middle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
           </svg>
-        </div>
-        <div class="flex border-2 border-white p-1 justify-center items-center" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+        </button>
+        <button type="button" class="flex border-2 border-white p-1 justify-center items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
             <svg class="w-4 h-4 md:w-5 md:h-5 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
               </svg>     
-        </div>
+        </button>
     </div>
 <div id="duda" class="fade-out items-center justify-center fixed w-30 text-center align-middle h-6 bottom-20 md:bottom-24 right-2 p-2 md:p-4 rounded-md z-50 text-xs md:text-sm font-geologica text-white bg-black bg-opacity-50">Tienes alguna duda?</div>
 <div id="logoWsp" class="fixed w-10 h-10 md:w-12 md:h-12 bottom-4 right-4 z-[9999]" style="z-index: 9999 !important;"><a href="https://wa.me/56979004253" target="_blank"><img class="w-full h-full" src="https://ik.imagekit.io/kirt8tkpk/img/logowsp.webp" alt="WhatsApp"></a></div>
-<nav id="navbar" class="navbar hidden items-center px-4 sm:px-12 fixed z-50 h-[40px] bg-fondoVerde top-0 left-0 w-full tracking-widest transition-all duration-300 ease-in-out">
+<nav id="navbar" aria-label="Navegación principal" class="navbar hidden items-center px-4 sm:px-12 fixed z-50 h-[40px] bg-fondoVerde top-0 left-0 w-full tracking-widest transition-all duration-300 ease-in-out">
         <div class="container lg:px-2 items-center lg:p-2 flex flex-row  w-full justify-between mx-auto  text-fondoCrema">   
             <div class="flex flex-row items-center justify-between w-full">
                 <ul id="opcionesNav" class="h-8 flex flex-row items-center justify-start md:justify-start lg:justify-between w-full">
@@ -74,16 +73,16 @@
                     <a href="/#instalaciones" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Instalaciones</a>
                     <a href="/#panoramas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Panoramas</a>
                     <a href="/#ubicacion" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Ubicación</a>
-                    <div onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+                    <button type="button" class="flex items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
                     <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
                     </svg>
-                    </div>
-                    <div onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+                    </button>
+                    <button type="button" class="flex items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
                         <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                           </svg>
-                    </div>
+                    </button>
                 </div>
                         
                 </ul>
@@ -107,18 +106,18 @@
         <li><a href="/#panoramas" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Panoramas</a></li>
         <li><a href="/#ubicacion" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic p-2">Ubicación</a></li>
         <li>
-            <div class="menuMob" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+            <button type="button" class="menuMob flex items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
                 <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
                 </svg>
-            </div>
+            </button>
         </li>
         <li>
-            <div class="menuMob" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+            <button type="button" class="menuMob flex items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
                 <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                 </svg>
-            </div>
+            </button>
         </li>
     </ul>
 </div>
@@ -229,7 +228,7 @@
     </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js" integrity="sha512-RmCE+nEdKZ45TpbCJgvYvfEDz3XaiGmTTJl6GfyITW3fouks4lNTOkoMXWJ9WA6aQO+3FV8cjA6fvTosOgbCrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     AOS.init(); // Asegúrate de que esto se ejecute después de que AOS se haya cargado
 </script>

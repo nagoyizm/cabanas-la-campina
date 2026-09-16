@@ -17,7 +17,7 @@
     <!--swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!--Aos--> 
-    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Favicon-->
     <link rel="icon" href="./favicon.png" type="image/x-icon">
     <!--Leaflet--> 
@@ -29,19 +29,19 @@
 </head>
 
 <body class="w-full max-width-100vw m-0 p-0 ">
-    <div class="absolute flex top-4 right-4 border-2 z-50 border-white 0  p-1 justify-center items-center" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+    <button type="button" class="absolute flex top-4 right-4 border-2 z-50 border-white p-1 justify-center items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
         <svg class="w-5 h-5 left-2 text-white align-middle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
         <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
       </svg>
-    </div>
-    <div class="absolute flex top-4 right-14 border-2 z-50 border-white 0  p-1 justify-center items-center" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+    </button>
+    <button type="button" class="absolute flex top-4 right-14 border-2 z-50 border-white p-1 justify-center items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
         <svg class="w-5 h-5 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
           </svg>     
-    </div>
+    </button>
 <div id="duda" class="fade-out items-center justify-center fixed w-30 text-center align-middle h-6 bottom-20 right-2 p-4 rounded-md z-50 text-sm font-geologica text-white bg-black bg-opacity-50">Tienes alguna duda?</div>
 <div id="logoWsp" class="fixed w-12 h-12 bottom-4 right-4 z-50"><a href="https://wa.me/56979004253" target="_blank"><img src="https://ik.imagekit.io/kirt8tkpk/img/logowsp.webp" alt=""></a></div>
-<nav id="navbar" class="navbar hidden items-center px-4 sm:px-12 fixed z-50 h-[40px] bg-fondoVerde top-0 left-0 w-full tracking-widest transition-all duration-300 ease-in-out">
+<nav id="navbar" aria-label="Navegación principal" class="navbar hidden items-center px-4 sm:px-12 fixed z-50 h-[40px] bg-fondoVerde top-0 left-0 w-full tracking-widest transition-all duration-300 ease-in-out">
         <div class="container lg:px-2 items-center lg:p-2 flex flex-row  w-full justify-between mx-auto  text-fondoCrema">   
             <div class="flex flex-row items-center justify-between w-full">
                 <ul id="opcionesNav" class="h-8 flex flex-row items-center justify-start md:justify-start lg:justify-between w-full">
@@ -57,16 +57,16 @@
                     <a href="#instalaciones" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Instalaciones</a>
                     <a href="#panoramas" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Panoramas</a>
                     <a href="#ubicacion" class="hover:bg-gray-500 hover:bg-opacity-40 transition duration-300 ease-in-out font-antic p-2">Ubicación</a>
-                    <div onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+                    <button type="button" class="flex items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
                     <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
                     </svg>
-                    </div>
-                    <div onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+                    </button>
+                    <button type="button" class="flex items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
                         <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                           </svg>
-                    </div>
+                    </button>
                 </div>
                         
                 </ul>
@@ -90,18 +90,18 @@
         <li><a href="#panoramas" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic">Panoramas</a></li>
         <li><a href="#ubicacion" class="menuMob hover:bg-gray-500 hover:bg-opacity-40 font-antic p-2">Ubicación</a></li>
         <li>
-            <div class="menuMob" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Instagram">
+            <button type="button" class="menuMob flex items-center cursor-pointer" onclick="window.open('https://www.instagram.com/cabanaslacampina.cl/', '_blank');" aria-label="Ir a Instagram">
                 <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
                 </svg>
-            </div>
+            </button>
         </li>
         <li>
-            <div class="menuMob" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" style="cursor: pointer;" tabindex="0" role="button" aria-label="Ir a Facebook">
+            <button type="button" class="menuMob flex items-center cursor-pointer" onclick="window.open('https://www.facebook.com/profile.php?id=61552521399288', '_blank');" aria-label="Ir a Facebook">
                 <svg class="w-6 h-6 text-fondoCrema dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                 </svg>
-            </div>
+            </button>
         </li>
     </ul>
 </div>
@@ -111,9 +111,9 @@
 <section id="carrusel" class="w-full h-screen object-fill flex-wrap">
     <div class="carousel-container relative w-full h-screen overflow-hidden">
         <div class="relative carousel flex h-full w-100 overflow-hidden">
-            <img id="imgCarrusel1" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp?tr=w-auto" alt="Imagen 1" class="absolute object-fill top-0 left-0 w-100 flex h-full scale-125 opacity-100" loading="lazy">
-            <img id="imgCarrusel2" src="https://ik.imagekit.io/kirt8tkpk/img/foto2.webp?tr=w-auto" alt="Imagen 2" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
-            <img id="imgCarrusel3" src="https://ik.imagekit.io/kirt8tkpk/img/foto3.webp?tr=w-auto" alt="Imagen 3" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
+            <img id="imgCarrusel1" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp?tr=w-auto" alt="Vista panorámica de cabañas La Campiña" class="absolute object-fill top-0 left-0 w-100 flex h-full scale-125 opacity-100" loading="lazy">
+            <img id="imgCarrusel2" src="https://ik.imagekit.io/kirt8tkpk/img/foto2.webp?tr=w-auto" alt="Entorno natural de cabañas La Campiña" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
+            <img id="imgCarrusel3" src="https://ik.imagekit.io/kirt8tkpk/img/foto3.webp?tr=w-auto" alt="Instalaciones exteriores de La Campiña" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
         </div>
     
 
@@ -137,7 +137,7 @@
             </div>
         </div>
         
-        <nav id="navbar2" class="absolute left-1/2 -translate-x-1/2 mx-auto items-center px-4 sm:px-12 z-50 h-[40px] top-[28%] w-1/2 tracking-widest ">
+        <nav id="navbar2" aria-label="Navegación del banner" class="absolute left-1/2 -translate-x-1/2 mx-auto items-center px-4 sm:px-12 z-50 h-[40px] top-[28%] w-1/2 tracking-widest ">
             <div class="container lg:px-2 items-center  flex flex-row w-full justify-between mx-auto text-white">
                 
                 <div class="flex flex-row items-center justify-between w-full">
@@ -356,7 +356,7 @@
                 <div class="flex flex-col bg-none w-full mt-2 md:h-1/2 lg:h-[95%] lg:w-[30%] text-black flex-grow rounded-lg relative items-center   overflow-auto">
                     <div class="z-0  absolute inset-0 bg-black opacity-0"></div>
                     <h3 id="tituloCabanas" class="z-10 text-4xl md:text-4xl lg:text-5xl text-fondoCrema font-whisper">Selecciona la cabaña</h3>
-                    <select id="selectCabanas" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
+                    <select id="selectCabanas" aria-label="Selecciona la cabaña" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
                         <option class="font-antic" value="cabaña de 2 a 5 personas" selected="">Cabañas de 2 a 5 personas</option>
                         <option class="font-antic" value="cabaña de 5 a 8 personas">Cabañas de 5 a 8 personas</option>
                     </select>
@@ -527,22 +527,22 @@
                 <div class="grid lg:gap-4 lg:mb-4 grid-cols-1 sm:grid-cols-2 px-4">
                     
                     <div class="col-span-1">
-                        <label for="start-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
+                        <label for="fechaInicioC" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
                         <input type="date" value="" name="fechaInicio" id="fechaInicioC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                     </div>
                     
                     <div class="col-span-1">
-                        <label for="end-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
+                        <label for="fechaTerminoC" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
                         <input type="date" name="fechaTermino" id="fechaTerminoC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                     </div>
                     
                     <div class="col-span-1">
-                        <label for="personas" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
+                        <label for="cantidadPersonasC" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
                         <input type="number" name="cantidadPersonas" id="cantidadPersonasC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
                     </div>
                     
                     <div class="col-span-1">
-                        <label for="mascotas" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Viene con mascota?</label>
+                        <label for="mascotaC" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Viene con mascota?</label>
                         <select id="mascotaC" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                             <option selected="">Seleccione</option>
                             <option value="Si">Sí</option>
@@ -551,12 +551,12 @@
                     </div>
                     
                     <div class="col-span-2">
-                        <label for="adicional" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Información adicional</label>
+                        <label for="adicionalC" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Información adicional</label>
                         <textarea id="adicionalC" rows="4" class="block h-[75px] lg:h-[150px] p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Añada información adicional"></textarea>
                     </div>
             
                     <div class="col-span-2 flex flex-row items-center justify-between px-4">
-                        <label for="confirmacion" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white"> Confirmo que he leído todo lo que incluye y no incluye la cabaña y acepto los términos y condiciones </label>
+                        <label for="checkboxCabana" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white"> Confirmo que he leído todo lo que incluye y no incluye la cabaña y acepto los términos y condiciones </label>
                         <input id="checkboxCabana" type="checkbox" class="ml-4" required>
                     </div>
                 </div>
@@ -585,7 +585,7 @@
             h-[85%]  lg:mt-2  flex flex-col lg:flex-row lg:h-[70vh] lg:py-4 mx-auto overflow-hidden" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
 
                 <div id="contCarruselSuites" class="mx-auto lg:pl-6 w-[91%] relative h-full md:h-1/2 lg:h-full lg:w-[50%]">
-                <div id="animation-carousel" class="absolute top-4 w-full h-[95%]" data-carousel="slide">
+                <div id="animation-carousel-suites" class="absolute top-4 w-full h-[95%]" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-full overflow-hidden  md:h-full lg:h-[100%]">
                          <!-- Item 1 -->
@@ -598,11 +598,11 @@
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-500 ease-linear" data-carousel-item="active">
-                            <img id="imagenSuite3" src="https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                            <img id="imagenSuite3" src="https://ik.imagekit.io/kirt8tkpk/img/suites/3.jpg?v=2" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-500 ease-linear" data-carousel-item>
-                            <img id="imagenSuite4" src="https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
+                            <img id="imagenSuite4" src="https://ik.imagekit.io/kirt8tkpk/img/suites/4.jpg?v=2" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-500 ease-linear" data-carousel-item>
@@ -636,7 +636,7 @@
                 <div class="flex flex-col bg-none  w-full mt-4 md:h-1/2 lg:h-[95%] lg:w-1/3 text-black flex-grow rounded-md relative items-center lg:m-4 overflow-auto">
                     <div class="z-0 absolute inset-0 bg-black opacity-0"></div>
                     <h3 id="tituloSuites" class="z-10 backtext-center text-4xl md:text-4xl lg:text-5xl text-black font-whisper">Selecciona la suite</h3>
-                    <select id="selectSuites" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
+                    <select id="selectSuites" aria-label="Selecciona la suite" class="bg-fondoCrema z-10 mt-2 font-antic rounded-sm w-5/6">
                         <option class="font-antic" value="Jardín de 1 a 2 personas" selected>Suite Jardín (1er piso, mayores de 12 años) </option>
                         <option class="font-antic" value="Clásica de 1 a 2 personas">Suite Clásica (2do piso, mayores de 12 años) </option>
                         
@@ -706,7 +706,7 @@
             <div class="flex flex-col lg:flex-row w-full my-8">
                 <div class="flex flex-col w-full lg:w-2/3">
                 <div class="max-h-[350px] lg:max-h-[500px] scrollbar-thin overflow-y-auto lg:mx-[50px] mb-[30px] mt-4" style="overflow-x: hidden;">
-                    <div id="parrafoTerminos" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-sm lg:text-lg font-poppins px-4 lg:px-16">
+                    <div id="parrafoTerminosSuites" class="text-black text-center rounded-lg bg-opacity-30 bg-white text-sm lg:text-lg font-poppins px-4 lg:px-16">
 
                         <br>
                         <b style="font-size: 1.5em; text-align: center;">Términos y Condiciones por Temporada</b>
@@ -817,22 +817,22 @@
     <div class="grid lg:gap-4 lg:mb-4 grid-cols-1 sm:grid-cols-2 px-4">
         
         <div class="col-span-1">
-            <label for="start-date" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
+            <label for="fechaInicio" class="block lg:mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de inicio (Check-in)</label>
             <input type="date" value="" name="fechaInicio" id="fechaInicio" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
         </div>
 
         <div class="col-span-1">
-            <label for="end-date" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
+            <label for="fechaTermino" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Fecha de término(Check-out)</label>
             <input type="date" name="fechaTermino" id="fechaTermino" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
         </div>
 
         <div class="col-span-1">
-            <label for="personas" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
+            <label for="cantidadPersonas" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Cantidad de personas</label>
             <input type="number" name="cantidadPersonas" id="cantidadPersonas" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
         </div>
 
         <div class="col-span-1">
-            <label for="infantes" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Viene con infante?</label>
+            <label for="infantesSuite" class="block mb-2 text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Viene con infante?</label>
             <select id="infantesSuite" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                 <option selected="">Seleccione</option>
                 <option value="Sí">Sí</option>
@@ -846,7 +846,7 @@
         </div>
         
         <div class="col-span-2 flex flex-row items-center justify-between px-4">
-            <label for="confirmacion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Confirmo que he leído todo lo que incluye y no incluye la suite y acepto los términos y condiciones </label>
+            <label for="checkboxSuite" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Confirmo que he leído todo lo que incluye y no incluye la suite y acepto los términos y condiciones </label>
             <input id="checkboxSuite" type="checkbox" class="ml-4" required>
         </div>
     </div>
@@ -873,7 +873,7 @@
                 
                 <div id="instalacionJardin" class="flip-container flex w-full h-1/5 lg:h-[200%] lg:w-[22%] lg:mx-2 lg:aspect-square overflow-hidden relative mb-4 lg:mb-0">
                     <div class="flipper">
-                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/jardin.webp" loading="lazy">
+                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/jardin.webp" alt="Jardines y senderos de La Campiña" loading="lazy">
                         <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;">
                             <span class="text-4xl font-whisper">Jardines y senderos</span>
@@ -883,7 +883,7 @@
     
                 <div id="instalacionPiscina" class="flip-container flex w-full h-1/5 lg:h-[200%] lg:w-[22%] lg:mx-2 lg:aspect-square overflow-hidden relative mb-4 lg:mb-0">
                     <div class="flipper">
-                        <img class="imgInstalacion w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Piscina1.webp" loading="lazy">
+                        <img class="imgInstalacion w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Piscina1.webp" alt="Piscinas de La Campiña" loading="lazy">
                         <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;">
                             <span class="text-4xl font-whisper">Piscinas</span>
@@ -893,7 +893,7 @@
                 
                 <div id="instalacionJuegos" class="flip-container flex w-full h-1/5 lg:h-[200%] lg:w-[22%] lg:mx-2 lg:aspect-square overflow-hidden relative mb-4 lg:mb-0">
                     <div class="flipper">
-                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/JuegosNinos.webp?v=2" loading="lazy">
+                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/JuegosNinos.webp?v=2" alt="Área de juegos infantiles de La Campiña" loading="lazy">
                         <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;">
                             <span class="text-4xl font-whisper">Juegos para niños</span>
@@ -903,7 +903,7 @@
             
                 <div id="instalacionQuincho" class="flip-container flex w-full h-1/5 lg:h-[200%] lg:w-[22%] lg:mx-2 lg:aspect-square overflow-hidden relative mb-4 lg:mb-0">
                     <div class="flipper">
-                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Quincho.webp?v=2" loading="lazy">
+                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/instalaciones/Quincho.webp?v=2" alt="Quinchos de La Campiña" loading="lazy">
                         <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;">
                             <span class="text-4xl font-whisper">Quinchos</span>
@@ -914,7 +914,7 @@
             
             <div id="instalacionAmenidades" class="flip-container relative flex h-1/5 w-full lg:mt-4 lg:h-1/3 lg:w-[92%] md:flex-row md:justify-between overflow-hidden">
                     <div class="flipper">
-                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp" loading="lazy">
+                        <img class="w-full h-full object-cover transition-transform duration-300 ease-in-out" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp" alt="Amenidades y servicios adicionales de La Campiña" loading="lazy">
                         <div class="absolute inset-0 bg-black opacity-40" style="pointer-events: none;"></div>
                         <div class="absolute inset-0 flex items-center justify-center text-white" style="pointer-events: none;">
                             <span class="text-4xl md:text-5xl lg:text-7xl font-whisper text-center">Amenidades y Servicios adicionales</span>
@@ -1079,14 +1079,14 @@
 <section id="ubicacion" class=" tituloSection w-full mx-auto h-screen flex flex-col" >
     <h2 class="tituloSection font-bold text-center text-black font-whisper text-5xl 
     md:text-5xl
-    lg:text-8xl"">Ubicación</h2>   
+    lg:text-8xl">Ubicación</h2>   
 
     <div class="mt-8 w-full h-screen relative flex flex-col justify-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
         
          <!-- Capa negra -->
          <div class="z-10 pointer-events-none absolute rounded-md mix-blend-lighten flex w-3/4 justify-around h-4/5 mx-auto top-0 left-0 right-0 bottom-0  bg-fondoCrema opacity-30"></div>
 
-        <iframe class="z-0 absolute  flex w-3/4 justify-around h-4/5 mx-auto top-0 left-0 right-0 bottom-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13332.277028340457!2d-71.6470433!3d-33.3431404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966213cb221bfdd3%3A0xa438340a62f59e9a!2zQ2FiYcOxYSBMYSBDYW1wacOxYQ!5e0!3m2!1ses-419!2scl!4v1731279459381!5m2!1ses-419!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa de ubicación de Cabañas La Campiña" class="z-0 absolute  flex w-3/4 justify-around h-4/5 mx-auto top-0 left-0 right-0 bottom-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13332.277028340457!2d-71.6470433!3d-33.3431404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966213cb221bfdd3%3A0xa438340a62f59e9a!2zQ2FiYcOxYSBMYSBDYW1wacOxYQ!5e0!3m2!1ses-419!2scl!4v1731279459381!5m2!1ses-419!2scl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
 
     </div>
@@ -1133,7 +1133,7 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js" integrity="sha512-RmCE+nEdKZ45TpbCJgvYvfEDz3XaiGmTTJl6GfyITW3fouks4lNTOkoMXWJ9WA6aQO+3FV8cjA6fvTosOgbCrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     AOS.init(); // Asegúrate de que esto se ejecute después de que AOS se haya cargado
 </script>
