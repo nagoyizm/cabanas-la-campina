@@ -1297,12 +1297,12 @@ input:checked + .toggle-bg {
   margin-bottom: 5rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-\[30px\] {
@@ -3307,8 +3307,8 @@ ul {
     margin-right: 1rem;
   }
 
-  .md\:mb-40 {
-    margin-bottom: 10rem;
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:ms-3 {
@@ -3529,6 +3529,10 @@ ul {
   .lg\:mx-\[50px\] {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .lg\:-mt-3 {
+    margin-top: -0.75rem;
   }
 
   .lg\:-mt-4 {
