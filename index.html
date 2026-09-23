@@ -110,10 +110,10 @@
 <div id="contenedor1" class="bg-fondoVerde z-0 mx-auto  flex flex-col overflow-hidden">
 <section id="carrusel" class="w-full h-screen object-fill flex-wrap">
     <div class="carousel-container relative w-full h-screen overflow-hidden">
-        <div class="relative carousel flex h-full w-100 overflow-hidden">
-            <img id="imgCarrusel1" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp?tr=w-auto" alt="Vista panorámica de cabañas La Campiña" class="absolute object-fill top-0 left-0 w-100 flex h-full scale-125 opacity-100" loading="lazy">
-            <img id="imgCarrusel2" src="https://ik.imagekit.io/kirt8tkpk/img/foto2.webp?tr=w-auto" alt="Entorno natural de cabañas La Campiña" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
-            <img id="imgCarrusel3" src="https://ik.imagekit.io/kirt8tkpk/img/foto3.webp?tr=w-auto" alt="Instalaciones exteriores de La Campiña" class="absolute top-0 left-0 w-100 h-full scale-125 opacity-0" loading="lazy">
+        <div class="relative carousel flex h-full w-full overflow-hidden">
+            <img id="imgCarrusel1" src="https://ik.imagekit.io/kirt8tkpk/img/foto1.webp?tr=w-auto" alt="Vista panorámica de cabañas La Campiña" class="absolute object-cover top-0 left-0 w-full flex h-full scale-125 opacity-100" loading="lazy">
+            <img id="imgCarrusel2" src="https://ik.imagekit.io/kirt8tkpk/img/foto2.webp?tr=w-auto" alt="Entorno natural de cabañas La Campiña" class="absolute object-cover top-0 left-0 w-full h-full scale-125 opacity-0" loading="lazy">
+            <img id="imgCarrusel3" src="https://ik.imagekit.io/kirt8tkpk/img/foto3.webp?tr=w-auto" alt="Instalaciones exteriores de La Campiña" class="absolute object-cover top-0 left-0 w-full h-full scale-125 opacity-0" loading="lazy">
         </div>
     
 
@@ -168,14 +168,16 @@
     </div>
 </section>
 
-<section id="bajada" class=" mx-auto h-[100vh] w-4/5 lg:w-3/5 mt-4 flex flex-col  items-center justify-start py-16 relative">
-    <h2 id="titulo" class="font-bold text-6xl md:text-3xl lg:text-8xl font-whisper text-fondoCrema">La Campiña Algarrobo</h2>
-    <h2 id="desde" class="font-bold text-6xl md:text-3xl lg:text-5xl font-whisper text-fondoCrema mx-auto absolute z-10 mt-24"> desde 1993</h2>
-    <div class=" mx-0 text-lg lg:text-3xl font-bold text-center mt-8 text-white font-antic tracking-[8px]">
+<section id="bajada" class="mx-auto min-h-screen lg:h-[100vh] w-full px-4 sm:w-4/5 lg:w-3/5 mt-4 flex flex-col items-center justify-start py-8 md:py-12 lg:py-16 relative">
+    <div class="flex flex-col items-center justify-center text-center w-full">
+        <h2 id="titulo" class="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-whisper text-fondoCrema text-center leading-tight">La Campiña Algarrobo</h2>
+        <h2 id="desde" class="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-5xl font-whisper text-fondoCrema text-center -mt-1 sm:-mt-2 lg:-mt-4">desde 1993</h2>
+    </div>
+    <div class="mx-0 text-base sm:text-lg lg:text-3xl font-bold text-center mt-6 lg:mt-8 text-white font-antic tracking-[4px] sm:tracking-[6px] lg:tracking-[8px]">
         Hermoso y tranquilo lugar de descanso <br>familiar en Algarrobo
     </div>
 
-    <section class="mt-10">
+    <section class="mt-6 md:mt-10">
         <section class="carousel-3D-swiper-section w-[85%] relative">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -240,8 +242,8 @@
         </section>
     </section>
 
-    <div id="botonBajada2" class="absolute bottom-0 md:w-1/2 text-white flex flex-col items-center "> 
-        <h2 class="text-center text-2xl lg:text-3xl font-antic">Conoce nuestro recinto</h2>
+    <div id="botonBajada2" class="mt-8 lg:mt-0 lg:absolute lg:bottom-4 md:w-1/2 text-white flex flex-col items-center"> 
+        <h2 class="text-center text-xl sm:text-2xl lg:text-3xl font-antic">Conoce nuestro recinto</h2>
         <a href="#recinto" class="animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="100px" fill="#FFFFFF"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></a>
     </div>
 </section>

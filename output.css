@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.18 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1273,6 +1273,10 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1339,10 +1343,6 @@ input:checked + .toggle-bg {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .mt-4 {
@@ -1519,6 +1519,10 @@ input:checked + .toggle-bg {
 
 .max-h-screen {
   max-height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-1\/2 {
@@ -2216,6 +2220,11 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[16px\] {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -2331,6 +2340,14 @@ input:checked + .toggle-bg {
 
 .leading-9 {
   line-height: 2.25rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.tracking-\[4px\] {
+  letter-spacing: 4px;
 }
 
 .tracking-\[8px\] {
@@ -2706,17 +2723,20 @@ footer{
 @media (max-width: 768px) {
   /* Ajusta el tamaño según tus necesidades */
 
+  #imgCarrusel1, #imgCarrusel2, #imgCarrusel3 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   #imgCarrusel1 {
     content: url('https://ik.imagekit.io/kirt8tkpk/img/foto1chica.webp');
   }
 
-  /* Ajusta el tamaño según tus necesidades */
-
   #imgCarrusel2 {
     content: url('https://ik.imagekit.io/kirt8tkpk/img/foto2chica.webp');
   }
-
-  /* Ajusta el tamaño según tus necesidades */
 
   #imgCarrusel3 {
     content: url('https://ik.imagekit.io/kirt8tkpk/img/foto3chica.webp');
@@ -3224,8 +3244,16 @@ ul {
 }
 
 @media (min-width: 640px) {
+  .sm\:-mt-2 {
+    margin-top: -0.5rem;
+  }
+
   .sm\:w-3\/4 {
     width: 75%;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:translate-x-0 {
@@ -3247,6 +3275,26 @@ ul {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+  }
+
+  .sm\:tracking-\[6px\] {
+    letter-spacing: 6px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3265,6 +3313,10 @@ ul {
 
   .md\:ms-3 {
     margin-inline-start: 0.75rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -3393,6 +3445,11 @@ ul {
     padding-bottom: 0px;
   }
 
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -3415,6 +3472,10 @@ ul {
     font-size: 3rem;
   }
 
+  .md\:text-6xl {
+    font-size: 4rem;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
   }
@@ -3435,8 +3496,16 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:bottom-0 {
     bottom: 0px;
+  }
+
+  .lg\:bottom-4 {
+    bottom: 1rem;
   }
 
   .lg\:top-\[15\%\] {
@@ -3462,6 +3531,10 @@ ul {
     margin-right: 50px;
   }
 
+  .lg\:-mt-4 {
+    margin-top: -1rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3474,6 +3547,10 @@ ul {
     margin-bottom: 1rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -3484,6 +3561,10 @@ ul {
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
   }
 
   .lg\:flex {
@@ -3520,6 +3601,10 @@ ul {
 
   .lg\:h-\[100\%\] {
     height: 100%;
+  }
+
+  .lg\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .lg\:h-\[150px\] {
@@ -3707,6 +3792,11 @@ ul {
     padding-bottom: 0.25rem;
   }
 
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -3759,6 +3849,10 @@ ul {
 
   .lg\:text-sm {
     font-size: 0.875rem;
+  }
+
+  .lg\:tracking-\[8px\] {
+    letter-spacing: 8px;
   }
 }
 
