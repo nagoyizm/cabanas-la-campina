@@ -1034,7 +1034,7 @@ const parrafoJuegos = `¡Diversión para los pequeños en nuestra área de juego
 const parrafoAmenidades = `
     <strong>PAPEL HIGIÉNICO: $500 por rollo.</strong><br> <br>
     <strong>CARBÓN: $5.000 por bolsa (2,4kg aprox.)</strong><br><br>
-    🍵 <strong>BEBIDAS CALIENTES DE MÁQUINA: $1.200 vaso 200ml.</strong> <br>Puedes elegir entre cappuccino y chocolate caliente.
+    ☕️🍵 <strong>BEBIDAS CALIENTES: Café de grano, infusiones, café de máquina (sabores).</strong> <br>Ver opciones en menú de su cabaña/suite, o bien, solicitarlo por WhatsApp.
     Retirar en recepción o pedir que te lo lleven a tu cabaña/suite.<br><br>
     🧼👕 <strong>SERVICIO DE LAVANDERÍA: $5.000 por bolsa (40x30x120cm). <br>Horario de servicio: 10:30hrs – 15:30hrs.</strong> <br>Incluye detergente, lavado, secado al aire libre, y doblado sin planchar (<b>NO SE RECIBE ROPA INTERIOR</b>). Una vez solicitado el servicio, le será entregada la bolsa en su cabaña/suite para que puedan llenarla con la ropa a lavar.<br><br>
     🧹 <strong>SERVICIO DE LIMPIEZA: $10.000. <br>Horario de servicio: 10:30hrs – 15:30hrs.</strong> <br>Incluye barrido general interior y terraza, orden de cama, aseo de baños con recambio de toallas y reposición de papel higiénico y amenidades. (<b>No se lava loza</b>).<br><br>
