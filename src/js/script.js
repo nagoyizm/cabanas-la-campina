@@ -910,6 +910,15 @@ selectCabanas.addEventListener('change', () => {
 
     // Esperar a que termine la animación de desvanecimiento
     setTimeout(() => {
+        // Asegurar que el carrusel vuelva siempre a la primera diapositiva (el video)
+        try {
+            const carouselCabanas = window.FlowbiteInstances?.getInstance('Carousel', 'animation-carousel');
+            if (carouselCabanas && typeof carouselCabanas.slideTo === 'function') {
+                carouselCabanas.slideTo(0);
+            }
+        } catch (err) {
+            console.warn('No se pudo mover el carrusel a la primera diapositiva:', err);
+        }
         if (selectCabanas.value === 'cabaña de 5 a 8 personas') {
             if (videoCabana) {
                 videoCabana.src = 'https://ik.imagekit.io/kirt8tkpk/video/Caba%C3%B1a%205%20a%208.mp4';
