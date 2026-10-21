@@ -856,8 +856,39 @@ selectCabanas.value = 'cabaña de 2 a 5 personas';
 // --- FIN: CÓDIGO AÑADIDO ---
 
 
+// Controles de video de Cabañas (sonido y reproducción)
+const videoCabana = document.getElementById('videoCabana');
+const btnMuteCabana = document.getElementById('btnMuteCabana');
+const iconMutedCabana = document.getElementById('iconMutedCabana');
+const iconUnmutedCabana = document.getElementById('iconUnmutedCabana');
+
+if (btnMuteCabana && videoCabana) {
+    btnMuteCabana.addEventListener('click', (e) => {
+        e.stopPropagation();
+        videoCabana.muted = !videoCabana.muted;
+        if (videoCabana.muted) {
+            iconMutedCabana.classList.remove('hidden');
+            iconUnmutedCabana.classList.add('hidden');
+        } else {
+            iconMutedCabana.classList.add('hidden');
+            iconUnmutedCabana.classList.remove('hidden');
+        }
+    });
+}
+
+if (videoCabana) {
+    videoCabana.addEventListener('click', () => {
+        if (videoCabana.paused) {
+            videoCabana.play().catch(() => {});
+        } else {
+            videoCabana.pause();
+        }
+    });
+}
+
 selectCabanas.addEventListener('change', () => {
     const titulo = document.getElementById('tituloCabanas');
+    const videoCabana = document.getElementById('videoCabana');
     const imagenes = [
         document.getElementById('imagenCabana1'),
         document.getElementById('imagenCabana2'),
@@ -865,16 +896,26 @@ selectCabanas.addEventListener('change', () => {
         document.getElementById('imagenCabana4'),
         document.getElementById('imagenCabana5')
     ];
+    if (videoCabana) {
+        imagenes.push(videoCabana);
+    }
     const parrafoCabanas = document.getElementById('parrafoCabanas');
 
     // Añadir clase de fade-out
-    imagenes.forEach(img => img.classList.add('fade-out'));
+    imagenes.forEach(img => {
+        if (img) img.classList.add('fade-out');
+    });
     parrafoCabanas.classList.add('fade-out');
     titulo.classList.add('fade-out');
 
     // Esperar a que termine la animación de desvanecimiento
     setTimeout(() => {
         if (selectCabanas.value === 'cabaña de 5 a 8 personas') {
+            if (videoCabana) {
+                videoCabana.src = 'https://ik.imagekit.io/kirt8tkpk/video/Caba%C3%B1a%205%20a%208.mp4';
+                videoCabana.load();
+                videoCabana.play().catch(() => {});
+            }
             document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/5.jpg?v=2';
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/6.jpg?v=2';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/7.jpg?v=2';
@@ -883,7 +924,11 @@ selectCabanas.addEventListener('change', () => {
             parrafoCabanas.innerHTML = cabana1;
             titulo.textContent = 'Cabaña de 5 a 8 personas';
         } else {
-            // Corregí un pequeño error en tu URL (tenía doble //)
+            if (videoCabana) {
+                videoCabana.src = 'https://ik.imagekit.io/kirt8tkpk/video/videocanba%C3%B1achica.mp4';
+                videoCabana.load();
+                videoCabana.play().catch(() => {});
+            }
             document.getElementById('imagenCabana1').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/1.webp';
             document.getElementById('imagenCabana2').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/2.webp';
             document.getElementById('imagenCabana3').src = 'https://ik.imagekit.io/kirt8tkpk/img/cabanas/3.webp';
@@ -895,8 +940,10 @@ selectCabanas.addEventListener('change', () => {
 
         // Remover clase de fade-out y añadir fade-in
         imagenes.forEach(img => {
-            img.classList.remove('fade-out');
-            img.classList.add('fade-in');
+            if (img) {
+                img.classList.remove('fade-out');
+                img.classList.add('fade-in');
+            }
         });
 
         parrafoCabanas.classList.remove('fade-out');

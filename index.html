@@ -312,6 +312,20 @@
                 <div id="animation-carousel" class="absolute top-4 w-full h-[95%]" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-full overflow-hidden rounded-sm md:h-full lg:h-[100%]">
+                         <!-- Item Video -->
+                        <div class="hidden duration-300 ease-linear" data-carousel-item="active">
+                            <video id="videoCabana" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 cursor-pointer" autoplay loop muted playsinline preload="metadata" src="https://ik.imagekit.io/kirt8tkpk/video/videocanba%C3%B1achica.mp4">
+                            </video>
+                            <button type="button" id="btnMuteCabana" class="absolute bottom-4 right-4 z-40 p-2 text-white bg-black/60 hover:bg-black/80 rounded-full cursor-pointer transition duration-300 focus:outline-none" aria-label="Activar o desactivar sonido">
+                                <svg id="iconMutedCabana" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                                </svg>
+                                <svg id="iconUnmutedCabana" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                </svg>
+                            </button>
+                        </div>
                          <!-- Item 1 -->
                         <div class="hidden duration-300 ease-linear" data-carousel-item>
                             <img id="imagenCabana1" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/1.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
@@ -321,7 +335,7 @@
                             <img id="imagenCabana2" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/2.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
                         </div>
                         <!-- Item 3 -->
-                        <div class="hidden duration-300 ease-linear" data-carousel-item="active">
+                        <div class="hidden duration-300 ease-linear" data-carousel-item>
                             <img id="imagenCabana3" src="https://ik.imagekit.io/kirt8tkpk/img/cabanas/3.webp" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." loading="lazy">
                         </div>
                         <!-- Item 4 -->

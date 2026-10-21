@@ -36,7 +36,6 @@ html{
   }
   
   #contenedor2 {
-    background-color: #ffffff;
     background-image: url('https://ik.imagekit.io/kirt8tkpk/img/.webp');
     /* Cambiado a 100% para asegurar que el verde ocupe toda la altura */
     background-repeat: repeat;
@@ -73,9 +72,7 @@ html{
 
 .scrollbar-thin {
   scrollbar-width: thin; /* Para Firefox */ 
-  scrollbar-color: #2D5132 #E3D7BB
-
-
+  scrollbar-color: #2D5132 #E3D7BB;
 }
 
 .scrollbar-body{
@@ -86,17 +83,11 @@ html{
   background: #E3D7BB; /* Color de fondo del track */
 }
 
-.contenedorDesplegablePanoramas {
-  transition: max-height 0.3s ease;
-}
-
-
-
         /* Contenedor para el efecto 3D */
 .flip-container {
           perspective: 1000px; /* Añade profundidad para el efecto 3D */
-          width: full;
-          height: full;
+          width: 100%;
+          height: 100%;
       }
 
       /* Div interior que va a rotar */
@@ -201,10 +192,9 @@ html{
 	align-items: center;
 	font-size: 14px;
 	color: #000;
-	margin: 0;
 	padding: 0;
 	max-width: 100%;
-	margin: auto;
+	margin: 0 auto;
 	overflow: hidden;
   max-height: 100%;
 	min-height: 50%;
@@ -231,7 +221,6 @@ html{
 	width: 100%;
 	height: 80%;
 	object-fit: cover;
-	border-radius: ;
   
 	-webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba( 255, 0, 0,	0.1 ) 0%, transparent 32px, transparent 100%);
 }
